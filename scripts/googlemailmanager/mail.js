@@ -9,8 +9,7 @@ const TOKEN_PATH = 'token.json';
 
 fs.readFile('credentials.json', (err, content) => {
     if (err) return console.log('Error loading client secret file:', err);
-
-    authorize(JSON.parse(content), listEmails);
+    authorize(JSON.parse(content), processEmails);
 });
 
 /**
@@ -62,52 +61,45 @@ function getNewToken(oAuth2Client, callback) {
     });
 }
 
-/**
- * Lists the labels in the user's account.
- *
- * @param {google.auth.OAuth2} auth An authorized OAuth2 client.
- */
-function listLabels(auth) {
-    const gmail = google.gmail({version: 'v1', auth});
-    gmail.users.labels.list({
-        userId: 'me',
-    }, (err, res) => {
-        if (err) return console.log('The API returned an error: ' + err);
-        const labels = res.data.labels;
-        if (labels.length) {
-            console.log('Labels:');
-            labels.forEach((label) => {
-                console.log(`- ${label.name}`);
-            });
-        } else {
-            console.log('No labels found.');
-        }
-    });
+async function getEmailSender(gmail, first) {
+    try {
+        const mailDetails = await gmail.users.messages.get({
+            userId: 'me',
+            id: first,
+        })
+        const headers = mailDetails.data.payload.headers;
+        const from = headers.filter(it => it.name === 'From').map(it => it.value);
+        console.log(from);
+        return from;
+    } catch (e) {
+        console.error(e);
+    }
 }
 
-/**
- * Lists the labels in the user's account.
- *
- * @param {google.auth.OAuth2} auth An authorized OAuth2 client.
- */
-function listEmails(auth) {
+async function processEmails(auth, nextPageToken) {
     const gmail = google.gmail({version: 'v1', auth});
-    gmail.users.messages.list({
+    const response = await gmail.users.messages.list({
         userId: 'me',
         includeSpamTrash: false,
-        maxResults: 2000,
-    }, (err, res) => {
-        if (err) return console.log('The API returned an error: ' + err);
-        const messages = res.data.messages;
-        if (messages.length) {
-            console.log('Labels:');
-            const fileStream = fs.createWriteStream(`./resources/mail.txt`);
-            messages.forEach((messages) => {
-                console.log(`- ${messages.id}`);
-                fileStream.write(`${messages.id}\n`)
-            });
-        } else {
-            console.log('No messages found.');
-        }
+        maxResults: 10,
+        labelIds: 'INBOX',
+        pageToken: nextPageToken
     });
+    if (response.status !== 200) {
+        return "";
+    }
+
+    const messages = response.data.messages;
+    for (const it of messages) {
+        const id = it.id
+        const from = await getEmailSender(gmail, id);
+        console.log(`sender is ${from}`);
+    }
+    const nextPage = response.data.nextPageToken
+    if(nextPageToken !== ''){
+        await snooze(1000)
+        await processEmails(auth, nextPage)
+    }
 }
+
+const snooze = ms => new Promise(resolve => setTimeout(resolve, ms));
