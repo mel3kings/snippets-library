@@ -1,5 +1,5 @@
 /scripts/googlemailmanager/token.json
-/scripts/googlemailmanager/node_modules
+/scripts/googlemailmanager/node_modules/*
 /scripts/googlemailmanager/credentials.json
 /scripts/googlemailmanager/package-lock.json
 /scripts/googlemailmanager/resources/*
