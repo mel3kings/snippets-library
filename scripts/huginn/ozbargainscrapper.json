@@ -1,0 +1,12 @@
+{
+  "expected_update_period_in_days": 2,
+  "url": "https://www.ozbargain.com.au/search/node/Razer%20Core%20X",
+  "type": "html",
+  "mode": "all",
+  "extract": {
+    "ozbargain": {
+      "xpath": "//*[@class=\"title\"]",
+      "array": "true"
+    }
+  }
+}

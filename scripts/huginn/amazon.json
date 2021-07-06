@@ -1,0 +1,14 @@
+{
+  "expected_update_period_in_days": 2,
+  "url": "https://www.amazon.com.au/s?k=razer+core+x&ref=nb_sb_noss_1",
+  "type": "html",
+  "mode": "all",
+  "extract": {
+    "price": {
+      "xpath": "//*[@class=\"a-price-whole\"]"
+    },
+    "title": {
+      "xpath": "//*[@class=\"a-section a-spacing-none a-spacing-top-small\"]"
+    }
+  }
+}
