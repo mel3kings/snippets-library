@@ -1,0 +1,15 @@
+<application>
+  <component name="FindSettings">
+    <option name="customScope" value="All Places" />
+    <option name="defaultScopeName" value="All Places" />
+    <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="*.js" />
+    <mask>*.gradle</mask>
+    <mask>*.sql</mask>
+    <mask>*.yml</mask>
+    <mask>*Repository.kt</mask>
+    <mask>*.kt</mask>
+    <mask>*.json</mask>
+    <mask>*.js</mask>
+  </component>
+</application>
