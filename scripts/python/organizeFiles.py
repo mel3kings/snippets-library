@@ -48,7 +48,7 @@ def move_file(original_file_location, file_name):
     os.rename(original_file_location, move_to)
 
 
-arr = os.listdir()
+arr = os.listdir(path)
 for a in arr:
     is_directory = os.path.isdir(a)
     if not is_directory:
