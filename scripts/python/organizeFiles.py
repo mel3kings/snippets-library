@@ -1,0 +1,56 @@
+#!/usr/bin/python
+import os
+
+print("organize files....")
+
+path = '/Users/melchor_tatlonghari/Desktop/'
+cleanup = '/Users/melchor_tatlonghari/Desktop/clean/'
+ppt = cleanup + 'ppt/'
+others = cleanup + 'others/'
+pdf = cleanup + 'pdf/'
+screenshots = cleanup + 'screenshots/'
+folders = [cleanup, ppt, others, pdf, screenshots]
+
+
+def ensure_folder_exists():
+    for folder in folders:
+        if not os.path.isdir(folder):
+            os.mkdir(folder)
+
+
+try:
+    os.chdir(path)
+    ensure_folder_exists()
+    print("Current working directory: {0}".format(os.getcwd()))
+except FileNotFoundError:
+    print("Directory: {0} does not exist".format(path))
+except NotADirectoryError:
+    print("{0} is not a directory".format(path))
+except PermissionError:
+    print("You do not have permissions to change to {0}".format(path))
+print(os.getcwd())
+
+
+def move_file(original_file_location, file_name):
+    print("trying to move " + file_name)
+    to_directory = cleanup
+    if original_file_location.endswith(".jpg") or original_file_location.endswith(
+            ".png") or original_file_location.endswith(".jpeg"):
+        to_directory = screenshots
+    elif original_file_location.endswith(".ppt") or original_file_location.endswith(".pptx"):
+        to_directory = ppt
+    elif original_file_location.endswith(".pdf"):
+        to_directory = pdf
+    else:
+        to_directory = others
+    move_to = to_directory + file_name
+    print("moving from" + original_file_location + " to " + move_to)
+    os.rename(original_file_location, move_to)
+
+
+arr = os.listdir()
+for a in arr:
+    is_directory = os.path.isdir(a)
+    if not is_directory:
+        original_file = path + a
+        move_file(original_file, a)
