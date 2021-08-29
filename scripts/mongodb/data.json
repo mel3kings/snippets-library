@@ -1,0 +1,35 @@
+{
+  "ID": 111,
+  "Company Name": "Company",
+  "Location": "California",
+  "Market": "US/UK",
+  "IPO Date": "2012-04-23T18:25:43.511Z",
+  "10K Present": true,
+  "10K Filing Data": "",
+  "Ticker": "TXH",
+  "Zipcode": "12345",
+  "Industry": ["Mining", "Baking"],
+  "Topics": [""],
+  "Financials": {
+    "2020": {
+      "numberOfEmployees": 1234,
+      "Revenue": 20000000,
+      "Net Income": "12345",
+      "Stock Price": "123",
+      "Market Cap": 123
+    }
+  },
+  "Board/Comittee Composition": {
+    "FullBoard": {},
+    "Audit Committee": {},
+    "Other": {},
+    "Member": [
+      {
+        "ID": 1234,
+        "Email": "foo@foo.com",
+        "Name": "Jack Person"
+      }
+    ]
+  }
+}
+
