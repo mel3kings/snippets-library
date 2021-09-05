@@ -1,0 +1,13 @@
+version: "2"
+services:
+  nginx:
+  #build tag enables you to use docker-compose build or docker-compose up --build
+    build:
+      context: .
+      dockerfile: Dockerfile
+# image: nginx:customnginx
+# image is optinal if you want to specify a specific image
+# otherwise it will a default for you
+    ports:
+    - "80:80"
+    - "443:443"

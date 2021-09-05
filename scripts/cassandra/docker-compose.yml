@@ -1,0 +1,28 @@
+version: "3"
+services:
+  mel_cass:
+    container_name: mel_cass
+    image: cassandra_dummy
+    build: .
+    ports:
+      - "9043:9042"
+    volumes:
+      - local_volume:/var/lib/cassandra
+  mel_cass_backup:
+    container_name: mel_cass_backup
+    image: cassandra_dummy
+    build: .
+    links:
+      - mel_cass:seed
+    ports:
+      - "9044:9042"
+    volumes:
+      - local_volume_backup:/var/lib/cassandra
+    environment:
+      - CASSANDRA_SEEDS=seed
+
+volumes:
+  local_volume:
+    external: true
+  local_volume_backup:
+    external: true

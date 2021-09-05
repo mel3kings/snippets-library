@@ -1,0 +1,12 @@
+version: "3"
+services:
+  salt-master:
+    image: mel3kings/salt-master
+    build: ./master
+    container_name: salt-master
+    tty: true
+  salt-minion:
+    image: mel3kings/salt-minion
+    build: ./slave
+    container_name: salt-minion
+    tty: true
