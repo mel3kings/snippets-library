@@ -12,3 +12,5 @@ spec:
 
   - name: backend
     image: redis
+
+# kubectl run nginx --image nginx`

@@ -1,0 +1,3 @@
+set nu
+set expandtab
+set tabstop=2
