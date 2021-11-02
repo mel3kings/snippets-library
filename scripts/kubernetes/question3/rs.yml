@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  annotations:
+    deployment.kubernetes.io/desired-replicas: "2"
+    deployment.kubernetes.io/max-replicas: "3"
+    deployment.kubernetes.io/revision: "1"
+  creationTimestamp: "2021-11-02T07:28:56Z"
+  generation: 1
+  labels:
+    app: mydeploy
+    pod-template-hash: 59d9ffcfd
+  name: mydeploy-59d9ffcfd
+  namespace: default
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: Deployment
+    name: mydeploy
+    uid: 15887410-d97c-4053-995a-ffc1a3731002
+  resourceVersion: "332605"
+  uid: 1ea8d3a4-b99f-49b9-a632-63640ce1189a
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mydeploy
+      pod-template-hash: 59d9ffcfd
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: mydeploy
+        pod-template-hash: 59d9ffcfd
+    spec:
+      containers:
+      - image: nginx:1.18.0
+        imagePullPolicy: IfNotPresent
+        name: nginx
+        ports:
+        - containerPort: 80
+          protocol: TCP
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+status:
+  availableReplicas: 2
+  fullyLabeledReplicas: 2
+  observedGeneration: 1
+  readyReplicas: 2
+  replicas: 2
