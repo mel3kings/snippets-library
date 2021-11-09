@@ -36,7 +36,7 @@ docker run \
 --network=host \
 -e SONAR_HOST_URL="http://127.0.0.1:9000" \
 -e SONAR_LOGIN="{SONAR_SECURITY_TOKEN}" \
--v "/Users/melchor_tatlonghari/workspace/<local_directory>:/usr/src" \
+-v "/Users/melchor_tatlonghari/workspace/${LOCAL_DIRECTORY}:/usr/src" \
 sonarsource/sonar-scanner-cli
 ```
 
