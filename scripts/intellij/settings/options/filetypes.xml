@@ -6,9 +6,12 @@
       <mapping pattern="docker" type="AUTO_DETECTED" />
       <mapping pattern="cypher_insert" type="AUTO_DETECTED" />
       <mapping pattern="neo4j" type="AUTO_DETECTED" />
+      <mapping ext="config" type="Erlang Terms" />
       <mapping ext="space.kts" type="Kotlin" />
       <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="main.kts" type="Kotlin" />
+      <removed_mapping ext="config" type="LOMBOK_CONFIG" />
+      <mapping pattern=".dockerignore" type="PLAIN_TEXT" />
       <mapping pattern=".alias_snsw" type="PLAIN_TEXT" />
       <mapping ext="rc" type="PLAIN_TEXT" />
       <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
