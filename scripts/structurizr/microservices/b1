@@ -1,0 +1,64 @@
+
+workspace "SystemLandscape" ""{
+    model {
+
+          softwareSystem = softwareSystem "Software System" {
+            ms1 = container "Microservice1" "Microservice v1.0" "India"
+            ms2 = container "Microservice2" "Microservice v2.0" "India"
+            ms3 = container "Microservice3" "Microservice v3.0" "India"
+            ms4 = container "Microservice4" "Microservice v2.0" "Sydney"
+            ms5 = container "Microservice5" "Microservice v1.0" "Sydney"
+            ms6 = container "Microservice6" "Microservice v1.1.1" "Sydney"
+            ms7 = container "Microservice7" "Microservice v1.0.0" "EU"
+            ms8 = container "Microservice8" "Microservice v1.0.1" "EU"        
+        }
+
+       
+    }
+
+    views {
+       systemContext softwareSystem {
+            include *
+           autolayout tb 300 300
+        }
+
+        container softwareSystem {
+            include *
+           autolayout tb 300 300
+        }
+
+        styles {
+            element "Customer"{
+                shape Person
+            }
+            element "Front End" {
+                shape WebBrowser
+            }            
+            element "Database" {
+                shape Cylinder
+            }
+            element "Software System" {
+                color #ffffff
+            }
+            element "India" {
+                background "#fff3bf"
+                color "#000000"
+            }
+            element "Sydney"{
+                background "#ccedff"
+                color "#000000"
+            }
+            element "EU" {
+                background "#e6fcf5"
+                color "#000000"
+            }
+
+        }
+
+         theme default
+
+    }
+}
+
+
+

@@ -1,0 +1,89 @@
+
+workspace "SystemLandscape" ""{
+    model {
+        ms1 = softwareSystem "Microservice1" "Microservice v1.0" "India"
+        ms2 = softwareSystem "Microservice2" "Microservice v2.0" "India"
+        ms3 = softwareSystem "Microservice3" "Microservice v3.0" "India"
+        ms4 = softwareSystem "Microservice4" "Microservice v2.0" "Sydney"
+        ms5 = softwareSystem "Microservice5" "Microservice v1.0" "Sydney"
+        ms6 = softwareSystem "Microservice6" "Microservice v1.1.1" "Sydney"
+        ms7 = softwareSystem "Microservice7" "Microservice v1.0.0" "EU"
+        ms8 = softwareSystem "Microservice8" "Microservice v1.0.1" "EU"
+      
+       pipeline = softwareSystem "CI/CD" "Monolith Pipeline" "Pipeline"
+       ms1 -> pipeline "triggers"
+       ms2 -> pipeline "triggers"
+       ms3 -> pipeline "triggers"
+       ms4 -> pipeline "triggers"
+       ms5 -> pipeline "triggers"
+       ms6 -> pipeline "triggers"
+       ms7 -> pipeline "triggers"
+       ms8 -> pipeline "triggers"
+
+        ds1 = softwareSystem "Microservice1 Output" "Microservice v5.0" "India"
+        ds2 = softwareSystem "Microservice2 Output" "Microservice v5.0" "India"
+        ds3 = softwareSystem "Microservice3 Output" "Microservice v5.0" "India"
+        ds4 = softwareSystem "Microservice4 Output" "Microservice v5.0" "Sydney"
+        ds5 = softwareSystem "Microservice5 Output" "Microservice v5.0" "Sydney"
+        ds6 = softwareSystem "Microservice6 Output" "Microservice v5.1.1" "Sydney"
+        ds7 = softwareSystem "Microservice7 Output" "Microservice v5.0.0" "EU"
+        ds8 = softwareSystem "Microservice8 Output" "Microservice v5.0.1" "EU"
+
+
+
+    pipeline -> ds1 "gets built by"
+    pipeline ->  ds2 "gets built by"
+    pipeline ->  ds3 "gets built by"
+    pipeline ->  ds4 "gets built by"
+    pipeline ->  ds5 "gets built by"
+    pipeline ->  ds6 "gets built by"
+    pipeline ->  ds7 "gets built by"
+    pipeline ->  ds8 "gets built by"
+
+    }
+
+    views {
+        systemlandscape "SystemLandscape" {
+            include *
+            autoLayout
+        }
+
+
+        styles {
+            element "Customer"{
+                shape Person
+            }
+            element "Front End" {
+                shape WebBrowser
+            }            
+            element "Database" {
+                shape Cylinder
+            }
+	        element "Software System" {
+                color #ffffff
+            }
+            element "Pipeline" {
+                shape Pipe
+                color "#000000"
+            }
+            element "India" {
+                background "#fff3bf"
+                color "#000000"
+            }
+            element "Sydney"{
+                background "#ccedff"
+                color "#000000"
+            }
+            element "EU" {
+                background "#e6fcf5"
+                color "#000000"
+            }
+
+        }
+    }
+}
+
+
+
+
+

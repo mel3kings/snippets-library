@@ -3,4 +3,8 @@
 /scripts/googlemailmanager/credentials.json
 /scripts/googlemailmanager/package-lock.json
 /scripts/googlemailmanager/resources/*
-
+/scripts/Terraform/.terraform
+.terraform
+terraform.tfstate
+terraform.tfstate.backup
+.terraform.lock.hcl

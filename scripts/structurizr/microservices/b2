@@ -1,0 +1,91 @@
+
+workspace "SystemLandscape" ""{
+    model {
+
+          softwareSystem = softwareSystem "User Service" {
+            ms1 = container "Microservice1" "Microservice v1.0" "Technology" "India"
+            ms2 = container "Microservice2" "Microservice v2.0" "Technology" "India"
+            ms3 = container "Microservice3" "Microservice v3.0" "Technology" "India"
+        }
+
+        softwareSystem2 = softwareSystem "Card Service" {
+            ms4 = container "Microservice4" "Microservice v2.0" "Technology" "Sydney" 
+            ms5 = container "Microservice5" "Microservice v1.0" "Technology" "Sydney" 
+            ms6 = container "Microservice6" "Microservice v1.1.1" "Technology" "Sydney" 
+        }
+
+         softwareSystem3 = softwareSystem "Transaction Service" {
+            ms7 = container "Microservice7" "Microservice v1.0.0" "Technology" "EU"
+            ms8 = container "Microservice8" "Microservice v1.0.1" "Technology" "EU" 
+        }
+
+        ms1 -> ms2 "calls"
+        ms1 -> ms3  "calls"
+
+        ms2 -> ms4 "calls"
+        ms4 -> ms5 "calls"
+        ms4 -> ms6 "calls"
+
+        ms3 -> ms7 "calls"
+
+        ms7 -> ms8 "calls"            
+           
+                  
+
+       
+    }
+
+    views {
+       systemContext softwareSystem {
+            include *
+           autolayout tb 300 300
+        }
+
+        container softwareSystem {
+            include *
+           autolayout tb 300 300
+        }
+        container softwareSystem2 {
+            include *
+           autolayout tb 300 300
+        }
+        container softwareSystem3 {
+            include *
+           autolayout tb 300 300
+        }
+
+        styles {
+            element "Customer"{
+                shape Person
+            }
+            element "Front End" {
+                shape WebBrowser
+            }            
+            element "Database" {
+                shape Cylinder
+            }
+            element "Software System" {
+                color "#ffffff"
+            }
+            element "India" {
+                background "#fff3bf"
+                color "#000000"
+            }
+            element "Sydney"{
+                background "#ccedff"
+                color "#000000"
+            }
+            element "EU" {
+                background "#e6fcf5"
+                color "#000000"
+            }
+
+        }
+
+         theme default
+
+    }
+}
+
+
+

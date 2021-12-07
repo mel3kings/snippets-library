@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: project-earthflower
+  name: project-earthflower
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: project-earthflower
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: project-earthflower
+    spec:
+       volumes:
+       - name: pvc-storage
+         persistentVolumeClaim:
+           claimName: earth-project-earthflower-pvc   
+      containers:
+      - image: httpd:2.4.41-alpine
+        name: httpd
+        resources: {}
+        volumeMounts:
+        - mountPath: /tmp/project-data
+          name: pvc-storage
+status: {}

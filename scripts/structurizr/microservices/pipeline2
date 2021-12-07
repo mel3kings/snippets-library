@@ -1,0 +1,97 @@
+
+workspace "SystemLandscape" ""{
+    model {
+        ms1 = softwareSystem "Microservice1" "Microservice v1.0" "India"
+        ms2 = softwareSystem "Microservice2" "Microservice v2.0" "India"
+        ms3 = softwareSystem "Microservice3" "Microservice v3.0" "India"
+        ms4 = softwareSystem "Microservice4" "Microservice v2.0" "Sydney"
+        ms5 = softwareSystem "Microservice5" "Microservice v1.0" "Sydney"
+        ms6 = softwareSystem "Microservice6" "Microservice v1.1.1" "Sydney"
+        ms7 = softwareSystem "Microservice7" "Microservice v1.0.0" "EU"
+        ms8 = softwareSystem "Microservice8" "Microservice v1.0.1" "EU"
+      
+       pipeline1 = softwareSystem "CI/CD Trigger 1" "Pipeline Triggers" "Pipeline"
+       pipeline2 = softwareSystem "CI/CD Trigger 2" "Pipeline Triggers" "Pipeline"
+       pipeline3 = softwareSystem "CI/CD Trigger 3" "Pipeline Triggers" "Pipeline"
+       pipeline4 = softwareSystem "CI/CD Trigger 4" "Pipeline Triggers" "Pipeline"
+       pipeline5 = softwareSystem "CI/CD Trigger 5" "Pipeline Triggers" "Pipeline"
+       pipeline6 = softwareSystem "CI/CD Trigger 6" "Pipeline Triggers" "Pipeline"
+       pipeline7 = softwareSystem "CI/CD Trigger 7" "Pipeline Triggers" "Pipeline"
+       pipeline8 = softwareSystem "CI/CD Trigger 8" "Pipeline Triggers" "Pipeline"
+
+       ms1 -> pipeline1 "triggers"
+       ms2 -> pipeline2 "triggers"
+       ms3 -> pipeline3 "triggers"
+       ms4 -> pipeline4 "triggers"
+       ms5 -> pipeline5 "triggers"
+       ms6 -> pipeline6 "triggers"
+       ms7 -> pipeline7 "triggers"
+       ms8 -> pipeline8 "triggers"
+
+        ds1 = softwareSystem "Microservice1 Output" "Microservice v5.0" "India"
+        ds2 = softwareSystem "Microservice2 Output" "Microservice v5.0" "India"
+        ds3 = softwareSystem "Microservice3 Output" "Microservice v5.0" "India"
+        ds4 = softwareSystem "Microservice4 Output" "Microservice v5.0" "Sydney"
+        ds5 = softwareSystem "Microservice5 Output" "Microservice v5.0" "Sydney"
+        ds6 = softwareSystem "Microservice6 Output" "Microservice v5.1.1" "Sydney"
+        ds7 = softwareSystem "Microservice7 Output" "Microservice v5.0.0" "EU"
+        ds8 = softwareSystem "Microservice8 Output" "Microservice v5.0.1" "EU"
+
+
+
+    pipeline1 -> ds1 "gets built by"
+    pipeline2 ->  ds2 "gets built by"
+    pipeline3 ->  ds3 "gets built by"
+    pipeline4 ->  ds4 "gets built by"
+    pipeline5 ->  ds5 "gets built by"
+    pipeline6 ->  ds6 "gets built by"
+    pipeline7 ->  ds7 "gets built by"
+    pipeline8 ->  ds8 "gets built by"
+
+    }
+
+    views {
+        systemlandscape "SystemLandscape" {
+            include *
+            autoLayout
+        }
+
+
+        styles {
+            element "Customer"{
+                shape Person
+            }
+            element "Front End" {
+                shape WebBrowser
+            }            
+            element "Database" {
+                shape Cylinder
+            }
+	        element "Software System" {
+                color #ffffff
+            }
+            element "Pipeline" {
+                shape Pipe
+                color "#000000"
+            }
+            element "India" {
+                background "#fff3bf"
+                color "#000000"
+            }
+            element "Sydney"{
+                background "#ccedff"
+                color "#000000"
+            }
+            element "EU" {
+                background "#e6fcf5"
+                color "#000000"
+            }
+
+        }
+    }
+}
+
+
+
+
+

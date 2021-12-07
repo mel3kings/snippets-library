@@ -1,0 +1,19 @@
+2021-12-07 03:18:55,899 INFO  [ContextLoaderListener] ***********************************************************************************
+2021-12-07 03:18:55,901 INFO  [ContextLoaderListener]    _____ _                   _              _          
+2021-12-07 03:18:55,903 INFO  [ContextLoaderListener]   / ____| |                 | |            (_)         
+2021-12-07 03:18:55,904 INFO  [ContextLoaderListener]  | (___ | |_ _ __ _   _  ___| |_ _   _ _ __ _ _____ __ 
+2021-12-07 03:18:55,905 INFO  [ContextLoaderListener]   \___ \| __| '__| | | |/ __| __| | | | '__| |_  / '__|
+2021-12-07 03:18:55,905 INFO  [ContextLoaderListener]   ____) | |_| |  | |_| | (__| |_| |_| | |  | |/ /| |   
+2021-12-07 03:18:55,906 INFO  [ContextLoaderListener]  |_____/ \__|_|   \__,_|\___|\__|\__,_|_|  |_/___|_|   
+2021-12-07 03:18:55,907 INFO  [ContextLoaderListener]                                                        
+2021-12-07 03:18:55,908 INFO  [ContextLoaderListener]  Structurizr Lite
+2021-12-07 03:18:55,914 INFO  [ContextLoaderListener]  Build: 2561
+2021-12-07 03:18:55,917 INFO  [ContextLoaderListener]  Built: 2021-12-01T14:32:52Z
+2021-12-07 03:18:55,945 INFO  [ContextLoaderListener]  Structurizr DSL: v1.16.1
+2021-12-07 03:18:55,946 INFO  [ContextLoaderListener] 
+2021-12-07 03:18:55,947 INFO  [ContextLoaderListener]  Memory: used=89MB; free=166MB; total=256MB; max=256MB
+2021-12-07 03:18:55,949 INFO  [ContextLoaderListener] ***********************************************************************************
+2021-12-07 03:20:42,949 ERROR [FileSystemWorkspaceComponent] com.structurizr.dsl.StructurizrDslParserException: Relationships cannot be added between parents and children at line 44: uploadService -> encryptionAgent "Encrypts file"
+2021-12-07 03:20:42,953 ERROR [ApiController] com.structurizr.lite.web.ApiException: workspace.dsl: Relationships cannot be added between parents and children at line 44: uploadService -> encryptionAgent "Encrypts file"
+2021-12-07 03:20:47,919 WARN  [PageNotFound] No mapping found for HTTP request with URI [/error] in DispatcherServlet with name 'root'
+2021-12-07 03:20:47,933 WARN  [PageNotFound] Request method 'POST' not supported

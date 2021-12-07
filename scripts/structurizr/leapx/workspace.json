@@ -1,0 +1,379 @@
+{
+  "id" : 1,
+  "name" : "SystemLandscape",
+  "revision" : 0,
+  "lastModifiedDate" : "2021-12-07T03:19:15Z",
+  "lastModifiedAgent" : "structurizr-web/2561/diagram",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlICJTeXN0ZW1MYW5kc2NhcGUiICIiewogICAgbW9kZWwgewogICAgICAgIHVzZXIgPSBwZXJzb24gIkNsaWVudCIgIkJhbmsgQ2xpZW50IiAiQ3VzdG9tZXIiCiAgICAgICAgZnJvbnRFbmQgPSBzb2Z0d2FyZVN5c3RlbSAiVXNlciBJbnRlcmZhY2UiICJXZWIgQXBwIG9yIE1vYmlsZSBBcHAiICJGcm9udCBFbmQiCiAgICAgICAgZ3JhcGhRTCA9IHNvZnR3YXJlU3lzdGVtICJHcmFwaFFMIEdhdGV3YXkiICJHcmFwaFFMIEdhdGV3YXkiICJHcmFwaFFMIgogICAgICAgIGF1dGhTZXJ2aWNlID0gc29mdHdhcmVTeXN0ZW0gIkF1dGggU2VydmljZSIgIkF1dGhlbnRpY2F0ZXMgUmVxdWVzdCIgIkJhY2sgRW5kIgogICAgICAgIAogICAgICAgIGZpbGVNYW5hZ2VtZW50ID0gc29mdHdhcmVTeXN0ZW0gIkZpbGUgTWFuYWdlbWVudCBTeXN0ZW0iICJGaWxlIE1hbmFnZW1lbnQgU3lzdGVtIiAiQmFjayBFbmQiewogICAgICAgICAgICB1cGxvYWRTZXJ2aWNlID0gY29udGFpbmVyICJVcGxvYWQgU2VydmljZSBDb250cm9sbGVyIiAiSGFuZGxlcyBhbGwgdXBsb2FkIG1lY2hhbmlzbSBhbmQgbWV0YWRhdGEgZ2VuZXJhdGlvbiIgIk5lc3RKUyIgIkJhY2sgRW5kIgogICAgICAgICAgICBsaWZlQ3ljbGVNYW5hZ2VtZW50ID0gY29udGFpbmVyICJMaWZlIEN5Y2xlIENvbnRyb2xsZXIiICJIYW5kbGVzIGV4cGlyeSBhbmQgY2xlYW51cCBtZWNoYW5pc21zIHZlcnN1cyBvZmZsb2FkaW5nIHRvIGNsb3VkIHByb3ZpZGVyIiAiV29ya2VyIiAiRXZlbnQgRHJpdmVuIgogICAgICAgICAgICBmaWxlTWFuYWdlbWVudERhdGFiYXNlID0gY29udGFpbmVyICJVcGxvYWQgREIiICJDb250YWlucyBhbGwgbWV0YWRhdGEgb2YgYWxsIGZpbGVzIG1hbmFnZWQiICJQb3N0Z3JlcyIgIkRhdGFiYXNlIgogICAgICAgICAgICBlbmNyeXB0aW9uQWdlbnQgPSBjb250YWluZXIgIkVuY3J5cHRpb24gQ29udHJvbGxlciIgIkFsbG93cyB1c2VyIHRvIGVuY3J5cHQgY3VzdG9tIHdheSIgIk5lc3QgSlMvR1BHL1NTSCIgIkJhY2sgRW5kIgogICAgICAgIH0KICAgICAgICBvY3JTZXJ2aWNlID0gc29mdHdhcmVTeXN0ZW0gIk9DUiBTZXJ2aWNlIiAiT0NSIFNlcnZpY2UiICJCYWNrIEVuZCJ7CiAgICAgICAgICAgICMgb2NyU2VydmljZUNvbnRhaW5lciA9IGNvbnRhaW5lciAiT0NSIFNlcnZpY2UiICJIYW5kbGVzIE9DUiByZXF1ZXN0IiAiTmVzdEpTIiAiQmFjayBFbmQiCiAgICAgICAgfQogICAgICAgICMgb2NyUHJvdmlkZXIgPSBzb2Z0d2FyZVN5c3RlbSAiM3JkIFBhcnR5IE9DUiBQcm92aWRlciIgIkdvb2dsZSBsZW5zIiAiRXh0ZXJuYWwiCiAgICAgICAgCiAgICAKICAgICAgICBjbG91ZFByb3ZpZGVyID0gc29mdHdhcmVTeXN0ZW0gIjNyZCBQYXJ0eSBGaWxlIFN0b3JhZ2UgQ2xvdWQgUHJvdmlkZXIiICJBV1MvQXp1cmUvQWRvYmUgRmlsZSBNYW5hZ2VyIiAiRXh0ZXJuYWwiCiAgICAgICAgCiAgICAgICAgIyBUb3AgTGV2ZWwgUmVsYXRpb25zaGlwcwogICAgICAgIHVzZXIgLT4gZnJvbnRFbmQgImFjY2VzcyIKICAgICAgICBmcm9udEVuZCAtPiBncmFwaFFMICJtdXRhdGlvbjogdXBsb2FkRmlsZSIKICAgICAgICBncmFwaFFMIC0+IGF1dGhTZXJ2aWNlICJ2YWxpZGF0ZSB1c2VyIHJlcXVlc3QiICJIVFRQIFBPU1QiCiAgICAgICAgZ3JhcGhRTCAtPiBmaWxlTWFuYWdlbWVudCAidXBsb2FkcyBmaWxlcyIKICAgICAgICBmaWxlTWFuYWdlbWVudCAtPiBncmFwaFFMICJnZXRzIGZpbGUgbWV0YWRhdGEiICJIVFRQIEdFVCIKICAgICAgICBmaWxlTWFuYWdlbWVudCAtPiBjbG91ZFByb3ZpZGVyICJzdG9yZXMgZmlsZXMgaW4iICJtdWx0aXBhcnQgdXBsb2FkIgogICAgICAgIG9jclNlcnZpY2UgLT4gY2xvdWRQcm92aWRlciAidmFsaWRhdGVzIGZpbGVzIgogICAgICAgIGdyYXBoUUwgLT4gb2NyU2VydmljZSAiZ2V0IE9DUiBSZXF1ZXN0IiAiRXZlbnQgRHJpdmVuIgogICAgICAgIG9jclNlcnZpY2UgLT4gZ3JhcGhRTCAiT0NSIERldGFpbHMiCiAgICAgICAgCiAgICAgICAgCiAgICAgICAgIyBDb250YWluZXIgUmVsYXRpb25zaGlwcwogICAgICAgIHVwbG9hZFNlcnZpY2UgLT4gY2xvdWRQcm92aWRlciAic3RvcmVzIGZpbGVzIGluIiAibXVsdGlwYXJ0IHVwbG9hZCIKICAgICAgICBncmFwaFFMIC0+IHVwbG9hZFNlcnZpY2UgInVwbG9hZHMgZmlsZXMiICJtdWx0aXBhcnQgdXBsb2FkIgogICAgICAgIGdyYXBoUUwgLT4gZW5jcnlwdGlvbkFnZW50ICJ1cGxvYWQga2V5cyIgIlNTSC9HUEciCiAgICAgICAgbGlmZUN5Y2xlTWFuYWdlbWVudCAtPiBjbG91ZFByb3ZpZGVyICJwZXJmb3JtcyBjbGVhbnVwIiAiYmF0Y2ggcHJvY2Vzc2luZyIKICAgICAgICB1cGxvYWRTZXJ2aWNlIC0+IGZpbGVNYW5hZ2VtZW50RGF0YWJhc2UgInNhdmVzIGZpbGUgbWV0YWRhdGEiICJPUk0iCiAgICAgICAgZmlsZU1hbmFnZW1lbnREYXRhYmFzZSAtPiBsaWZlQ3ljbGVNYW5hZ2VtZW50ICJHZXRzIGZpbGUgbWV0YWRhdGEiCiAgICAgICAgdXBsb2FkU2VydmljZSAtPiBlbmNyeXB0aW9uQWdlbnQgIkVuY3J5cHRzIGZpbGUiCiAgICAgICAgCiAgICAgICAgIyBvY3JTZXJ2aWNlQ29udGFpbmVyIC0+IG9jclByb3ZpZGVyICJzZW5kIHJlcXVlc3RzIgogICAgfQoKICAgIHZpZXdzIHsKICAgICAgICBzeXN0ZW1sYW5kc2NhcGUgIlN5c3RlbUxhbmRzY2FwZSIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b2xheW91dAogICAgICAgIH0KICAgICAgICAgICAgICAKICAgICAgICBjb250YWluZXIgZmlsZU1hbmFnZW1lbnQgIkZpbGVfTWFuYWdlbWVudF9Db250YWluZXJzIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvTGF5b3V0IGxyCiAgICAgICAgfQogICAgICAgIAogICAgICAgIAogICAgICAgIHN0eWxlcyB7CiAgICAgICAgICAgIGVsZW1lbnQgIkN1c3RvbWVyInsKICAgICAgICAgICAgICAgIHNoYXBlIFBlcnNvbgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkdyYXBoUUwiewogICAgICAgICAgICAgICAgc2hhcGUgSGV4YWdvbgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkZyb250IEVuZCIgewogICAgICAgICAgICAgICAgc2hhcGUgV2ViQnJvd3NlcgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkV2ZW50IERyaXZlbiIgewogICAgICAgICAgICAgICAgc2hhcGUgUm91bmRlZEJveAogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkV4dGVybmFsInsKICAgICAgICAgICAgICAgIHNoYXBlIENvbXBvbmVudAogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjODY4ZTk2CiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiRGF0YWJhc2UiIHsKICAgICAgICAgICAgICAgIHNoYXBlIEN5bGluZGVyCiAgICAgICAgICAgIH0KCSAgICAgICAgZWxlbWVudCAiU29mdHdhcmUgU3lzdGVtIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICMxMTY4YmQKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KfQoKCg=="
+  },
+  "configuration" : { },
+  "model" : {
+    "people" : [ {
+      "id" : "1",
+      "tags" : "Element,Person,Customer",
+      "name" : "Client",
+      "description" : "Bank Client",
+      "relationships" : [ {
+        "id" : "12",
+        "tags" : "Relationship",
+        "sourceId" : "1",
+        "destinationId" : "2",
+        "description" : "access"
+      } ],
+      "location" : "Unspecified"
+    } ],
+    "softwareSystems" : [ {
+      "id" : "2",
+      "tags" : "Element,Software System,Front End",
+      "name" : "User Interface",
+      "description" : "Web App or Mobile App",
+      "relationships" : [ {
+        "id" : "13",
+        "tags" : "Relationship",
+        "sourceId" : "2",
+        "destinationId" : "3",
+        "description" : "mutation: uploadFile"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "11",
+      "tags" : "Element,Software System,External",
+      "name" : "3rd Party File Storage Cloud Provider",
+      "description" : "AWS/Azure/Adobe File Manager",
+      "location" : "Unspecified"
+    }, {
+      "id" : "4",
+      "tags" : "Element,Software System,Back End",
+      "name" : "Auth Service",
+      "description" : "Authenticates Request",
+      "location" : "Unspecified"
+    }, {
+      "id" : "10",
+      "tags" : "Element,Software System,Back End",
+      "name" : "OCR Service",
+      "description" : "OCR Service",
+      "relationships" : [ {
+        "id" : "18",
+        "tags" : "Relationship",
+        "sourceId" : "10",
+        "destinationId" : "11",
+        "description" : "validates files"
+      }, {
+        "id" : "20",
+        "tags" : "Relationship",
+        "sourceId" : "10",
+        "destinationId" : "3",
+        "description" : "OCR Details"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "5",
+      "tags" : "Element,Software System,Back End",
+      "name" : "File Management System",
+      "description" : "File Management System",
+      "relationships" : [ {
+        "id" : "16",
+        "tags" : "Relationship",
+        "sourceId" : "5",
+        "destinationId" : "3",
+        "description" : "gets file metadata",
+        "technology" : "HTTP GET"
+      }, {
+        "id" : "17",
+        "tags" : "Relationship",
+        "sourceId" : "5",
+        "destinationId" : "11",
+        "description" : "stores files in",
+        "technology" : "multipart upload"
+      } ],
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "6",
+        "tags" : "Element,Container,Back End",
+        "name" : "Upload Service Controller",
+        "description" : "Handles all upload mechanism and metadata generation",
+        "relationships" : [ {
+          "id" : "27",
+          "tags" : "Relationship",
+          "sourceId" : "6",
+          "destinationId" : "9",
+          "description" : "Encrypts file"
+        }, {
+          "id" : "21",
+          "tags" : "Relationship",
+          "sourceId" : "6",
+          "destinationId" : "11",
+          "description" : "stores files in",
+          "technology" : "multipart upload"
+        }, {
+          "id" : "25",
+          "tags" : "Relationship",
+          "sourceId" : "6",
+          "destinationId" : "8",
+          "description" : "saves file metadata",
+          "technology" : "ORM"
+        } ],
+        "technology" : "NestJS"
+      }, {
+        "id" : "8",
+        "tags" : "Element,Container,Database",
+        "name" : "Upload DB",
+        "description" : "Contains all metadata of all files managed",
+        "relationships" : [ {
+          "id" : "26",
+          "tags" : "Relationship",
+          "sourceId" : "8",
+          "destinationId" : "7",
+          "description" : "Gets file metadata"
+        } ],
+        "technology" : "Postgres"
+      }, {
+        "id" : "7",
+        "tags" : "Element,Container,Event Driven",
+        "name" : "Life Cycle Controller",
+        "description" : "Handles expiry and cleanup mechanisms versus offloading to cloud provider",
+        "relationships" : [ {
+          "id" : "24",
+          "tags" : "Relationship",
+          "sourceId" : "7",
+          "destinationId" : "11",
+          "description" : "performs cleanup",
+          "technology" : "batch processing"
+        } ],
+        "technology" : "Worker"
+      }, {
+        "id" : "9",
+        "tags" : "Element,Container,Back End",
+        "name" : "Encryption Controller",
+        "description" : "Allows user to encrypt custom way",
+        "technology" : "Nest JS/GPG/SSH"
+      } ]
+    }, {
+      "id" : "3",
+      "tags" : "Element,Software System,GraphQL",
+      "name" : "GraphQL Gateway",
+      "description" : "GraphQL Gateway",
+      "relationships" : [ {
+        "id" : "14",
+        "tags" : "Relationship",
+        "sourceId" : "3",
+        "destinationId" : "4",
+        "description" : "validate user request",
+        "technology" : "HTTP POST"
+      }, {
+        "id" : "22",
+        "tags" : "Relationship",
+        "sourceId" : "3",
+        "destinationId" : "6",
+        "description" : "uploads files",
+        "technology" : "multipart upload"
+      }, {
+        "id" : "15",
+        "tags" : "Relationship",
+        "sourceId" : "3",
+        "destinationId" : "5",
+        "description" : "uploads files"
+      }, {
+        "id" : "23",
+        "tags" : "Relationship",
+        "sourceId" : "3",
+        "destinationId" : "9",
+        "description" : "upload keys",
+        "technology" : "SSH/GPG"
+      }, {
+        "id" : "19",
+        "tags" : "Relationship",
+        "sourceId" : "3",
+        "destinationId" : "10",
+        "description" : "get OCR Request",
+        "technology" : "Event Driven"
+      } ],
+      "location" : "Unspecified"
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemLandscapeViews" : [ {
+      "key" : "SystemLandscape",
+      "paperSize" : "A4_Portrait",
+      "dimensions" : {
+        "width" : 1958,
+        "height" : 3216
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "enterpriseBoundaryVisible" : true,
+      "elements" : [ {
+        "id" : "11",
+        "x" : 1296,
+        "y" : 2707
+      }, {
+        "id" : "1",
+        "x" : 575,
+        "y" : 207
+      }, {
+        "id" : "2",
+        "x" : 550,
+        "y" : 907
+      }, {
+        "id" : "3",
+        "x" : 958,
+        "y" : 1507
+      }, {
+        "id" : "4",
+        "x" : 208,
+        "y" : 2107
+      }, {
+        "id" : "5",
+        "x" : 1300,
+        "y" : 907
+      }, {
+        "id" : "10",
+        "x" : 958,
+        "y" : 2107
+      } ],
+      "relationships" : [ {
+        "id" : "18"
+      }, {
+        "id" : "17",
+        "vertices" : [ {
+          "x" : 1558,
+          "y" : 1507
+        }, {
+          "x" : 1558,
+          "y" : 2407
+        } ]
+      }, {
+        "id" : "16",
+        "vertices" : [ {
+          "x" : 1221,
+          "y" : 1308
+        } ]
+      }, {
+        "id" : "15",
+        "vertices" : [ {
+          "x" : 1486,
+          "y" : 1449
+        } ]
+      }, {
+        "id" : "14"
+      }, {
+        "id" : "13"
+      }, {
+        "id" : "12"
+      }, {
+        "id" : "20",
+        "vertices" : [ {
+          "x" : 1333,
+          "y" : 1979
+        } ]
+      }, {
+        "id" : "19",
+        "vertices" : [ {
+          "x" : 1033,
+          "y" : 1979
+        } ]
+      } ]
+    } ],
+    "containerViews" : [ {
+      "softwareSystemId" : "5",
+      "key" : "File_Management_Containers",
+      "paperSize" : "A3_Landscape",
+      "dimensions" : {
+        "width" : 3866,
+        "height" : 1758
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "externalSoftwareSystemBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "11",
+        "x" : 3208,
+        "y" : 1233
+      }, {
+        "id" : "3",
+        "x" : 208,
+        "y" : 629
+      }, {
+        "id" : "6",
+        "x" : 958,
+        "y" : 929
+      }, {
+        "id" : "7",
+        "x" : 2458,
+        "y" : 929
+      }, {
+        "id" : "8",
+        "x" : 1708,
+        "y" : 929
+      }, {
+        "id" : "9",
+        "x" : 1708,
+        "y" : 329
+      } ],
+      "relationships" : [ {
+        "id" : "27"
+      }, {
+        "id" : "26"
+      }, {
+        "id" : "25"
+      }, {
+        "id" : "24"
+      }, {
+        "id" : "23"
+      }, {
+        "id" : "22"
+      }, {
+        "id" : "21",
+        "vertices" : [ {
+          "x" : 1708,
+          "y" : 1379
+        } ]
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : {
+        "elements" : [ {
+          "tag" : "Customer",
+          "shape" : "Person"
+        }, {
+          "tag" : "GraphQL",
+          "shape" : "Hexagon"
+        }, {
+          "tag" : "Front End",
+          "shape" : "WebBrowser"
+        }, {
+          "tag" : "Event Driven",
+          "shape" : "RoundedBox"
+        }, {
+          "tag" : "External",
+          "background" : "#868e96",
+          "shape" : "Component"
+        }, {
+          "tag" : "Database",
+          "shape" : "Cylinder"
+        }, {
+          "tag" : "Software System",
+          "background" : "#1168bd",
+          "color" : "#ffffff"
+        } ]
+      },
+      "terminology" : { },
+      "lastSavedView" : "SystemLandscape"
+    }
+  }
+}
