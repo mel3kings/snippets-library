@@ -1,0 +1,26 @@
+2021-12-08 02:39:46,212 INFO  [ContextLoaderListener] ***********************************************************************************
+2021-12-08 02:39:46,215 INFO  [ContextLoaderListener]    _____ _                   _              _          
+2021-12-08 02:39:46,216 INFO  [ContextLoaderListener]   / ____| |                 | |            (_)         
+2021-12-08 02:39:46,217 INFO  [ContextLoaderListener]  | (___ | |_ _ __ _   _  ___| |_ _   _ _ __ _ _____ __ 
+2021-12-08 02:39:46,218 INFO  [ContextLoaderListener]   \___ \| __| '__| | | |/ __| __| | | | '__| |_  / '__|
+2021-12-08 02:39:46,219 INFO  [ContextLoaderListener]   ____) | |_| |  | |_| | (__| |_| |_| | |  | |/ /| |   
+2021-12-08 02:39:46,219 INFO  [ContextLoaderListener]  |_____/ \__|_|   \__,_|\___|\__|\__,_|_|  |_/___|_|   
+2021-12-08 02:39:46,220 INFO  [ContextLoaderListener]                                                        
+2021-12-08 02:39:46,221 INFO  [ContextLoaderListener]  Structurizr Lite
+2021-12-08 02:39:46,224 INFO  [ContextLoaderListener]  Build: 2561
+2021-12-08 02:39:46,226 INFO  [ContextLoaderListener]  Built: 2021-12-01T14:32:52Z
+2021-12-08 02:39:46,253 INFO  [ContextLoaderListener]  Structurizr DSL: v1.16.1
+2021-12-08 02:39:46,254 INFO  [ContextLoaderListener] 
+2021-12-08 02:39:46,255 INFO  [ContextLoaderListener]  Memory: used=92MB; free=163MB; total=256MB; max=256MB
+2021-12-08 02:39:46,257 INFO  [ContextLoaderListener] ***********************************************************************************
+2021-12-08 02:44:18,624 ERROR [FileSystemWorkspaceComponent] com.structurizr.dsl.StructurizrDslParserException: Unexpected tokens at line 21: asdfasd "SystemLandscape" "asdasd" {
+2021-12-08 02:44:18,629 ERROR [ApiController] com.structurizr.lite.web.ApiException: workspace.dsl: Unexpected tokens at line 21: asdfasd "SystemLandscape" "asdasd" {
+2021-12-08 02:44:23,613 WARN  [PageNotFound] No mapping found for HTTP request with URI [/error] in DispatcherServlet with name 'root'
+2021-12-08 02:44:23,617 WARN  [PageNotFound] Request method 'POST' not supported
+2021-12-08 02:47:52,819 ERROR [FileSystemWorkspaceComponent] com.structurizr.dsl.StructurizrDslParserException: The destination element "message" does not exist at line 11: configServer -> message "notify change"
+2021-12-08 02:47:52,820 ERROR [ApiController] com.structurizr.lite.web.ApiException: workspace.dsl: The destination element "message" does not exist at line 11: configServer -> message "notify change"
+2021-12-08 02:47:57,822 WARN  [PageNotFound] No mapping found for HTTP request with URI [/error] in DispatcherServlet with name 'root'
+2021-12-08 02:47:57,824 WARN  [PageNotFound] Request method 'POST' not supported
+2021-12-08 07:31:51,675 INFO  [ContextLoaderListener] ********************************************************
+2021-12-08 07:31:51,680 INFO  [ContextLoaderListener]  Stopping Structurizr Lite
+2021-12-08 07:31:51,686 INFO  [ContextLoaderListener] ********************************************************

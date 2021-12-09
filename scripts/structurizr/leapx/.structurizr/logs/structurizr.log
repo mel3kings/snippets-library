@@ -17,3 +17,22 @@
 2021-12-07 03:20:42,953 ERROR [ApiController] com.structurizr.lite.web.ApiException: workspace.dsl: Relationships cannot be added between parents and children at line 44: uploadService -> encryptionAgent "Encrypts file"
 2021-12-07 03:20:47,919 WARN  [PageNotFound] No mapping found for HTTP request with URI [/error] in DispatcherServlet with name 'root'
 2021-12-07 03:20:47,933 WARN  [PageNotFound] Request method 'POST' not supported
+2021-12-07 03:32:06,129 ERROR [FileSystemWorkspaceComponent] com.structurizr.dsl.StructurizrDslParserException: Relationships cannot be added between parents and children at line 44: uploadService -> encryptionAgent "Encrypts file"
+2021-12-07 03:32:06,131 ERROR [ApiController] com.structurizr.lite.web.ApiException: workspace.dsl: Relationships cannot be added between parents and children at line 44: uploadService -> encryptionAgent "Encrypts file"
+2021-12-07 03:32:11,116 WARN  [PageNotFound] No mapping found for HTTP request with URI [/error] in DispatcherServlet with name 'root'
+2021-12-07 03:32:11,117 WARN  [PageNotFound] Request method 'POST' not supported
+2021-12-07 03:32:49,814 ERROR [FileSystemWorkspaceComponent] com.structurizr.dsl.StructurizrDslParserException: Unexpected tokens at line 11: encryptionAgent = component "Encryption Controller" "Allows user to encrypt custom way" "Nest JS/GPG/SSH" "Back End"
+2021-12-07 03:32:49,815 ERROR [ApiController] com.structurizr.lite.web.ApiException: workspace.dsl: Unexpected tokens at line 11: encryptionAgent = component "Encryption Controller" "Allows user to encrypt custom way" "Nest JS/GPG/SSH" "Back End"
+2021-12-07 03:33:01,002 WARN  [PageNotFound] No mapping found for HTTP request with URI [/error] in DispatcherServlet with name 'root'
+2021-12-07 03:33:01,004 WARN  [PageNotFound] Request method 'POST' not supported
+2021-12-07 03:37:35,214 ERROR [FileSystemWorkspaceComponent] com.structurizr.dsl.StructurizrDslParserException: Valid rank directions are: tb|bt|lr|rl at line 54: autolayout lb
+2021-12-07 03:37:35,215 ERROR [ApiController] com.structurizr.lite.web.ApiException: workspace.dsl: Valid rank directions are: tb|bt|lr|rl at line 54: autolayout lb
+2021-12-07 03:37:40,213 WARN  [PageNotFound] No mapping found for HTTP request with URI [/error] in DispatcherServlet with name 'root'
+2021-12-07 03:37:40,215 WARN  [PageNotFound] Request method 'POST' not supported
+2021-12-07 03:37:40,890 ERROR [FileSystemWorkspaceComponent] com.structurizr.dsl.StructurizrDslParserException: Valid rank directions are: tb|bt|lr|rl at line 54: autolayout lb 1000 1000
+2021-12-07 03:37:40,891 ERROR [ApiController] com.structurizr.lite.web.ApiException: workspace.dsl: Valid rank directions are: tb|bt|lr|rl at line 54: autolayout lb 1000 1000
+2021-12-07 03:37:46,834 WARN  [PageNotFound] No mapping found for HTTP request with URI [/error] in DispatcherServlet with name 'root'
+2021-12-07 03:37:46,836 WARN  [PageNotFound] Request method 'POST' not supported
+2021-12-07 05:28:18,009 INFO  [ContextLoaderListener] ********************************************************
+2021-12-07 05:28:18,010 INFO  [ContextLoaderListener]  Stopping Structurizr Lite
+2021-12-07 05:28:18,013 INFO  [ContextLoaderListener] ********************************************************

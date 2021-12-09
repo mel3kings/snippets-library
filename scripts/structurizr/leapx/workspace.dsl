@@ -6,10 +6,14 @@ workspace "SystemLandscape" ""{
         authService = softwareSystem "Auth Service" "Authenticates Request" "Back End"
         
         fileManagement = softwareSystem "File Management System" "File Management System" "Back End"{
-            uploadService = container "Upload Service Controller" "Handles all upload mechanism and metadata generation" "NestJS" "Back End"
-            lifeCycleManagement = container "Life Cycle Controller" "Handles expiry and cleanup mechanisms versus offloading to cloud provider" "Worker" "Event Driven"
+            uploadService = container "Upload Service Container" "Handles all upload mechanism and metadata generation" "NestJS" "Back End"{
+                uploadServiceController = component "Upload Service Controller" "Upload Controller" "NestJS" "Back End"
+                encryptionAgent = component "Encryption Controller" "Allows user to encrypt custom way" "Nest JS/GPG/SSH" "Back End"
+                lifeCycleManagement = component "Life Cycle Controller" "Handles expiry and cleanup mechanisms versus offloading to cloud provider" "Worker" "Event Driven"
+            }
             fileManagementDatabase = container "Upload DB" "Contains all metadata of all files managed" "Postgres" "Database"
-            encryptionAgent = container "Encryption Controller" "Allows user to encrypt custom way" "Nest JS/GPG/SSH" "Back End"
+            
+            
         }
         ocrService = softwareSystem "OCR Service" "OCR Service" "Back End"{
             # ocrServiceContainer = container "OCR Service" "Handles OCR request" "NestJS" "Back End"
@@ -20,15 +24,16 @@ workspace "SystemLandscape" ""{
         cloudProvider = softwareSystem "3rd Party File Storage Cloud Provider" "AWS/Azure/Adobe File Manager" "External"
         
         # Top Level Relationships
-        user -> frontEnd "access"
-        frontEnd -> graphQL "mutation: uploadFile"
-        graphQL -> authService "validate user request" "HTTP POST"
-        graphQL -> fileManagement "uploads files"
-        fileManagement -> graphQL "gets file metadata" "HTTP GET"
-        fileManagement -> cloudProvider "stores files in" "multipart upload"
-        ocrService -> cloudProvider "validates files"
-        graphQL -> ocrService "get OCR Request" "Event Driven"
-        ocrService -> graphQL "OCR Details"
+        user -> frontEnd "1. access"
+        frontEnd -> graphQL "2. mutation: uploadFile"
+        graphQL -> authService "3. validate user request" "HTTP POST"
+        graphQL -> fileManagement "4. uploads files"
+        fileManagement -> cloudProvider "5. stores files in" "multipart upload"     
+        fileManagement -> graphQL "6. gets file metadata" "HTTP GET"
+        graphQL -> ocrService "7. get OCR Request" "Event Driven"
+        ocrService -> cloudProvider "8. validates files"
+        ocrService -> graphQL "9. OCR Details"
+        graphQL -> frontEnd "10. Return file and OCR details"
         
         
         # Container Relationships
@@ -36,9 +41,9 @@ workspace "SystemLandscape" ""{
         graphQL -> uploadService "uploads files" "multipart upload"
         graphQL -> encryptionAgent "upload keys" "SSH/GPG"
         lifeCycleManagement -> cloudProvider "performs cleanup" "batch processing"
-        uploadService -> fileManagementDatabase "saves file metadata" "ORM"
+        uploadServiceController -> fileManagementDatabase "saves file metadata" "ORM"
         fileManagementDatabase -> lifeCycleManagement "Gets file metadata"
-        uploadService -> encryptionAgent "Encrypts file"
+        uploadServiceController -> encryptionAgent "Encrypts file"
         
         # ocrServiceContainer -> ocrProvider "send requests"
     }
@@ -46,13 +51,13 @@ workspace "SystemLandscape" ""{
     views {
         systemlandscape "SystemLandscape" {
             include *
-            autolayout
+            autolayout tb
         }
               
-        container fileManagement "File_Management_Containers" {
-            include *
-            autoLayout lr
-        }
+         component uploadService "File_Management_Controllers" {
+                    include *
+                    autoLayout lr
+         }
         
         
         styles {

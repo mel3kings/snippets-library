@@ -1,0 +1,168 @@
+{
+  "id" : 1,
+  "name" : "SystemLandscape",
+  "description" : "Microservice Restart",
+  "revision" : 0,
+  "lastModifiedDate" : "2021-12-08T02:48:06Z",
+  "lastModifiedAgent" : "structurizr-web/2561/diagram",
+  "properties" : {
+    "structurizr.dsl" : "CndvcmtzcGFjZSAiU3lzdGVtTGFuZHNjYXBlIiAiTWljcm9zZXJ2aWNlIFJlc3RhcnQiewogICAgbW9kZWwgewogICAgICAgbXMxID0gc29mdHdhcmVTeXN0ZW0gIk1pY3Jvc2VydmljZTEiICJNaWNyb3NlcnZpY2UgdjEuMCIgIkluZGlhIgogICAgICAgbXMzID0gc29mdHdhcmVTeXN0ZW0gIk1pY3Jvc2VydmljZTMiICJNaWNyb3NlcnZpY2UgdjMuMCIgIkluZGlhIgoKICAgICAgIG1zNyA9IHNvZnR3YXJlU3lzdGVtICJNaWNyb3NlcnZpY2U3IiAiTWljcm9zZXJ2aWNlIHYxLjAuMCIgIkVVIgogICAgICAgbXM4ID0gc29mdHdhcmVTeXN0ZW0gIk1pY3Jvc2VydmljZTgiICJNaWNyb3NlcnZpY2UgdjEuMC4xIiAiRVUiIAogICAgICAgY29uZmlnU2VydmVyID0gc29mdHdhcmVTeXN0ZW0gIkNvbmZpZyBTZXJ2ZXIiICJDb25maWcgU2VydmVyIiAiQmFja2VuZCIKICAgICAgIAogICAgICAKICAgICAgICAKICAgICAgICBtczEgLT4gY29uZmlnU2VydmVyICJHZXQgaW5pdGlhbCBjb25maWciICJIVFRQIEdFVCIKICAgICAgICBtczMgLT4gY29uZmlnU2VydmVyICJHZXQgaW5pdGlhbCBjb25maWciICJIVFRQIEdFVCIKICAgICAgICBtczcgLT4gY29uZmlnU2VydmVyICJHZXQgaW5pdGlhbCBjb25maWciICJIVFRQIEdFVCIKICAgICAgICBtczggLT4gY29uZmlnU2VydmVyICJHZXQgaW5pdGlhbCBjb25maWciICJIVFRQIEdFVCIKICAgICAKICAgICAKICAgIH0KCiAgICB2aWV3cyB7CiAgICAgICAgc3lzdGVtbGFuZHNjYXBlICJTeXN0ZW1MYW5kc2NhcGUiICJNaWNyb3NlcnZpY2UgUmVzdGFydCIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b0xheW91dCBscgogICAgICAgIH0KCgogICAgICAgIHN0eWxlcyB7CiAgICAgICAgICAgIGVsZW1lbnQgIkN1c3RvbWVyInsKICAgICAgICAgICAgICAgIHNoYXBlIFBlcnNvbgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkthZmthInsKICAgICAgICAgICAgICAgIHNoYXBlIFBpcGUKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJGcm9udCBFbmQiIHsKICAgICAgICAgICAgICAgIHNoYXBlIFdlYkJyb3dzZXIKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJEYXRhYmFzZSIgewogICAgICAgICAgICAgICAgc2hhcGUgQ3lsaW5kZXIKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJTb2Z0d2FyZSBTeXN0ZW0iIHsKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJJbmRpYSIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAiI2ZmZjNiZiIKICAgICAgICAgICAgICAgIGNvbG9yICIjMDAwMDAwIgogICAgICAgICAgICB9CiAgICAgICAgICAgICBlbGVtZW50ICJBbnRpIiB7CiAgICAgICAgICAgICAgICBjb2xvciAiIzAwMDAwMCIKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIiNmZjZiNmIiCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiU3lkbmV5InsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIiNjY2VkZmYiCiAgICAgICAgICAgICAgICBjb2xvciAiIzAwMDAwMCIKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJFVSIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAiI2U2ZmNmNSIKICAgICAgICAgICAgICAgIGNvbG9yICIjMDAwMDAwIgogICAgICAgICAgICB9CgogICAgICAgIH0KCiAgICAgICAgIHRoZW1lIGRlZmF1bHQKCiAgICB9Cn0KCgoKCgo="
+  },
+  "configuration" : { },
+  "model" : {
+    "softwareSystems" : [ {
+      "id" : "5",
+      "tags" : "Element,Software System,Backend",
+      "name" : "Config Server",
+      "description" : "Config Server",
+      "location" : "Unspecified"
+    }, {
+      "id" : "1",
+      "tags" : "Element,Software System,India",
+      "name" : "Microservice1",
+      "description" : "Microservice v1.0",
+      "relationships" : [ {
+        "id" : "6",
+        "tags" : "Relationship",
+        "sourceId" : "1",
+        "destinationId" : "5",
+        "description" : "Get initial config",
+        "technology" : "HTTP GET"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "4",
+      "tags" : "Element,Software System,EU",
+      "name" : "Microservice8",
+      "description" : "Microservice v1.0.1",
+      "relationships" : [ {
+        "id" : "9",
+        "tags" : "Relationship",
+        "sourceId" : "4",
+        "destinationId" : "5",
+        "description" : "Get initial config",
+        "technology" : "HTTP GET"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "3",
+      "tags" : "Element,Software System,EU",
+      "name" : "Microservice7",
+      "description" : "Microservice v1.0.0",
+      "relationships" : [ {
+        "id" : "8",
+        "tags" : "Relationship",
+        "sourceId" : "3",
+        "destinationId" : "5",
+        "description" : "Get initial config",
+        "technology" : "HTTP GET"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "2",
+      "tags" : "Element,Software System,India",
+      "name" : "Microservice3",
+      "description" : "Microservice v3.0",
+      "relationships" : [ {
+        "id" : "7",
+        "tags" : "Relationship",
+        "sourceId" : "2",
+        "destinationId" : "5",
+        "description" : "Get initial config",
+        "technology" : "HTTP GET"
+      } ],
+      "location" : "Unspecified"
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemLandscapeViews" : [ {
+      "description" : "Microservice Restart",
+      "key" : "SystemLandscape",
+      "paperSize" : "A4_Portrait",
+      "dimensions" : {
+        "width" : 1616,
+        "height" : 2516
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "enterpriseBoundaryVisible" : true,
+      "elements" : [ {
+        "id" : "1",
+        "x" : 207,
+        "y" : 207
+      }, {
+        "id" : "2",
+        "x" : 207,
+        "y" : 807
+      }, {
+        "id" : "3",
+        "x" : 207,
+        "y" : 1407
+      }, {
+        "id" : "4",
+        "x" : 207,
+        "y" : 2007
+      }, {
+        "id" : "5",
+        "x" : 957,
+        "y" : 1107
+      } ],
+      "relationships" : [ {
+        "id" : "6"
+      }, {
+        "id" : "7"
+      }, {
+        "id" : "8"
+      }, {
+        "id" : "9"
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : {
+        "elements" : [ {
+          "tag" : "Customer",
+          "shape" : "Person"
+        }, {
+          "tag" : "Kafka",
+          "shape" : "Pipe"
+        }, {
+          "tag" : "Front End",
+          "shape" : "WebBrowser"
+        }, {
+          "tag" : "Database",
+          "shape" : "Cylinder"
+        }, {
+          "tag" : "Software System",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "India",
+          "background" : "#fff3bf",
+          "color" : "#000000"
+        }, {
+          "tag" : "Anti",
+          "background" : "#ff6b6b",
+          "color" : "#000000"
+        }, {
+          "tag" : "Sydney",
+          "background" : "#ccedff",
+          "color" : "#000000"
+        }, {
+          "tag" : "EU",
+          "background" : "#e6fcf5",
+          "color" : "#000000"
+        } ]
+      },
+      "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ],
+      "terminology" : { },
+      "lastSavedView" : "SystemLandscape"
+    }
+  }
+}
