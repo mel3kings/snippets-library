@@ -3,35 +3,17 @@ import os
 
 print("organize files....")
 
-path = '/Users/melchor_tatlonghari/Desktop/'
-cleanup = '/Users/melchor_tatlonghari/Desktop/clean/'
-ppt = cleanup + 'ppt/'
-others = cleanup + 'others/'
-pdf = cleanup + 'pdf/'
-screenshots = cleanup + 'screenshots/'
-folders = [cleanup, ppt, others, pdf, screenshots]
+paths = ['/Users/melchor_tatlonghari/Desktop/', '/Users/melchor_tatlonghari/Downloads/']
 
 
-def ensure_folder_exists():
+def ensure_folder_exists(folders):
+    print("checking folders exists {0}".format(folders))
     for folder in folders:
         if not os.path.isdir(folder):
             os.mkdir(folder)
 
 
-try:
-    os.chdir(path)
-    ensure_folder_exists()
-    print("Current working directory: {0}".format(os.getcwd()))
-except FileNotFoundError:
-    print("Directory: {0} does not exist".format(path))
-except NotADirectoryError:
-    print("{0} is not a directory".format(path))
-except PermissionError:
-    print("You do not have permissions to change to {0}".format(path))
-print(os.getcwd())
-
-
-def move_file(original_file_location, file_name):
+def move_file(original_file_location, file_name, screenshots, ppt, pdf, others):
     print("trying to move " + file_name)
     to_directory = cleanup
     if original_file_location.endswith(".jpg") or original_file_location.endswith(
@@ -48,9 +30,27 @@ def move_file(original_file_location, file_name):
     os.rename(original_file_location, move_to)
 
 
-arr = os.listdir(path)
-for a in arr:
-    is_directory = os.path.isdir(a)
-    if not is_directory:
-        original_file = path + a
-        move_file(original_file, a)
+for path in paths:
+    try:
+        os.chdir(path)
+        cleanup = path + 'clean/'
+        ppt_ = (cleanup + 'ppt/')
+        others_ = (cleanup + 'others/')
+        pdf_ = (cleanup + 'pdf/')
+        screenshots_ = (cleanup + 'screenshots/')
+        folders = [cleanup, ppt_, others_, pdf_, screenshots_]
+        ensure_folder_exists(folders)
+        print("Current working directory: {0}".format(os.getcwd()))
+    except FileNotFoundError:
+        print("Directory: {0} does not exist".format(path))
+    except NotADirectoryError:
+        print("{0} is not a directory".format(path))
+    except PermissionError:
+        print("You do not have permissions to change to {0}".format(path))
+    arr = os.listdir(path)
+    for a in arr:
+        is_directory = os.path.isdir(a)
+        if not is_directory:
+            original_file = path + a
+            move_file(original_file, a, screenshots_, ppt_, pdf_, others_)
+print("done running command for {0}".format(os.getcwd()))
