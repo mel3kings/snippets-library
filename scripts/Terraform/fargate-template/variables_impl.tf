@@ -86,13 +86,13 @@ variable "task_container_protocol" {
 
 variable "task_definition_cpu" {
   description = "Amount of CPU to reserve for the task."
-  default     = 256
+  default     = 1024
   type        = number
 }
 
 variable "task_definition_memory" {
   description = "The soft limit (in MiB) of memory to reserve for the container."
-  default     = 512
+  default     = 2048
   type        = number
 }
 
@@ -183,7 +183,7 @@ variable "with_service_discovery_srv_record" {
 
 variable "stop_timeout" {
   description = "Time duration (in seconds) to wait before the container is forcefully killed if it doesn't exit normally on its own. On Fargate the maximum value is 120 seconds."
-  default     = 30
+  default     = 120
 }
 
 variable "task_role_permissions_boundary_arn" {

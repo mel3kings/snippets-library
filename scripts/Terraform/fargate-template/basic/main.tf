@@ -49,8 +49,8 @@ resource "aws_security_group_rule" "task_ingress_8000" {
   security_group_id        = module.fargate.service_sg_id
   type                     = "ingress"
   protocol                 = "tcp"
-  from_port                = 8080
-  to_port                  = 8080
+  from_port                = 80
+  to_port                  = 80
   source_security_group_id = module.fargate_alb.security_group_id
 }
 
@@ -59,7 +59,7 @@ resource "aws_security_group_rule" "alb_ingress_80" {
   type              = "ingress"
   protocol          = "tcp"
   from_port         = 80
-  to_port           = 8080
+  to_port           = 80
   cidr_blocks       = ["0.0.0.0/0"]
   ipv6_cidr_blocks  = ["::/0"]
 }
@@ -86,12 +86,13 @@ module "fargate" {
   lb_arn               = module.fargate_alb.arn
   cluster_id           = aws_ecs_cluster.cluster.id
   task_container_image = "mariolet/docker-demo:latest"
+  #task_container_image = "mel3kings/esg-poc-platform-frontend:latest"
 
   // public ip is needed for default vpc, default is false
   task_container_assign_public_ip = true
 
   // port, default protocol is HTTP
-  task_container_port = 8080
+  task_container_port = 80
 
 #  task_container_port_mappings = [
 #    {
