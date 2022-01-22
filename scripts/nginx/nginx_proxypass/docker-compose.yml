@@ -1,0 +1,14 @@
+version: "2"
+services:
+  nginx:
+    container_name: nginx_proxy
+    build:
+      context: ""
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+  web:
+    image: yeasy/simple-web:latest
+    ports:
+      - "3000:80"
