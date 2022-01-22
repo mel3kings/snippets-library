@@ -13,3 +13,6 @@
 - output <variable_name>
 - refresh (get from current state)
 - graph (graphviz)
+
+# References
+- https://cloudposse.com/

@@ -69,8 +69,7 @@ const processEmails = async (auth, nextPageToken) => {
     const response = await gmail.users.messages.list({
         userId: 'me',
         includeSpamTrash: false,
-        maxResults: 50,
-        labelIds: 'INBOX',
+        maxResults: 1000,
         pageToken: nextPageToken
     });
     if (response.status !== 200) {

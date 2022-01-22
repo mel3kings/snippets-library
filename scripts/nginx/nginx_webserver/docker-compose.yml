@@ -1,0 +1,11 @@
+version: "2"
+services:
+  nginx:
+    #image: <custom_nginx_image> # custom nginx image is optinal if you want to specify a specific image otherwise it will a default for you
+    container_name: nginx_holder
+    build: #build tag enables you to use docker-compose build or docker-compose up --build
+      context: ""
+      dockerfile: Dockerfile
+    ports:
+    - "80:80"
+    - "443:443"
