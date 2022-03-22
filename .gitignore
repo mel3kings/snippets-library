@@ -8,3 +8,9 @@
 terraform.tfstate
 terraform.tfstate.backup
 .terraform.lock.hcl
+.vagrant
+kedro/
+*.log
+dt/
+__pycache__/
+# skip kedro for now
