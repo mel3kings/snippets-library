@@ -86,7 +86,7 @@ module "fargate" {
   lb_arn               = module.fargate_alb.arn
   cluster_id           = aws_ecs_cluster.cluster.id
   task_container_image = "mariolet/docker-demo:latest"
-  #task_container_image = "mel3kings/esg-poc-platform-frontend:latest"
+#  task_container_image = "mel3kings/change-here"
 
   // public ip is needed for default vpc, default is false
   task_container_assign_public_ip = true

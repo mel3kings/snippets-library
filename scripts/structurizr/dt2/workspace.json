@@ -1,0 +1,188 @@
+{
+  "id" : 1,
+  "name" : "SystemLandscape",
+  "revision" : 0,
+  "lastModifiedDate" : "2022-03-14T22:44:07Z",
+  "lastModifiedAgent" : "structurizr-web/2561/diagram",
+  "properties" : {
+    "structurizr.dsl" : "CndvcmtzcGFjZSAiU3lzdGVtTGFuZHNjYXBlIiAiInsKICAgIG1vZGVsIHsKICAgICAgICBtY2tpbnNleSA9IHBlcnNvbiAiTWNLaW5zZXkiICJDb25zdWx0YW50IiAiQ3VzdG9tZXIiCiAgICAgICAgZGVmZW5jZVVzZXIgPSBzb2Z0d2FyZVN5c3RlbSAiQ2xpZW50IEFwcHJvdmVkIEF1dGhlbnRpY2F0aW9uIiAiU1NIIG9yIFNlcnZpY2UgQWNjb3VudCAoVEJDKSIgIkNvbXBvbmVudCIKICAgICAgICBtY2tpbnNleVJlcG9zaXRvcnkgPSBzb2Z0d2FyZVN5c3RlbSAiSW50ZXJuYWwgUHJpdmF0ZSBNY0tpbnNleSBSZXBvc2l0b3J5IiAiR2l0SHViIiAiU29mdHdhcmUgU3lzdGVtIgogICAgICAgIGRlZmVuY2VBcnRpZmFjdG9yeSA9IHNvZnR3YXJlU3lzdGVtICJDbGllbnQgSW50ZXJuYWwgQXJ0aWZhY3RvcnkiICJKRnJvZyIgIlNvZnR3YXJlIFN5c3RlbSIKICAgICAgICBQUk4gPSBzb2Z0d2FyZVN5c3RlbSAiUHJpdmF0ZSBDbGllbnQgSW50ZXJuYWwgTmV0d29yayIgIlBSTiIgIlZNIgoKICAgICAgICBtY2tpbnNleSAtPiBtY2tpbnNleVJlcG9zaXRvcnkgIjEuIHB1c2hlcyBjb2RlIHRvIgogICAgICAgIG1ja2luc2V5UmVwb3NpdG9yeSAtPiBtY2tpbnNleVJlcG9zaXRvcnkgIjIuIFNjYW5zIGNvZGUgYW5kIGNvbW1pdHMgbG9ncyIKICAgICAgICBkZWZlbmNlVXNlciAtPiBkZWZlbmNlQXJ0aWZhY3RvcnkgIiIKICAgICAgIAogICAgICAgIG1ja2luc2V5UmVwb3NpdG9yeSAtPiBkZWZlbmNlVXNlciAiMy4gQXV0b21hdGVkIGNvZGUgcHVsbHMiCiAgICAgICAgCiAgICAgICAgZGVmZW5jZUFydGlmYWN0b3J5IC0+IGRlZmVuY2VBcnRpZmFjdG9yeSAiNC4gU2NhbnMgY29kZSIKICAgICAgICBkZWZlbmNlQXJ0aWZhY3RvcnkgLT4gUFJOICI1LiBwdWxsIGFydGVmYWN0cyBmcm9tIgoKCiAgICB9CgogICAgdmlld3MgewogICAgICAgIHN5c3RlbWxhbmRzY2FwZSAiU3lzdGVtTGFuZHNjYXBlIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvTGF5b3V0IGxyCiAgICAgICAgfQoKCiAgICAgICAgc3R5bGVzIHsKICAgICAgICAgICAgZWxlbWVudCAiQ3VzdG9tZXIiewogICAgICAgICAgICAgICAgc2hhcGUgUGVyc29uCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiRnJvbnQgRW5kIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBXZWJCcm93c2VyCiAgICAgICAgICAgIH0KICAgICAgICAgICAgIGVsZW1lbnQgIlZNIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBSb3VuZGVkQm94CiAgICAgICAgICAgICB9CiAgICAgICAgICAgICBlbGVtZW50ICJDb21wb25lbnQiIHsKICAgICAgICAgICAgICAgIGNvbG9yICMwMDAwMDAKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgI2RlZTJlNgogICAgICAgICAgICAgICAgc2hhcGUgQ29tcG9uZW50CiAgICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkRhdGFiYXNlIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBDeWxpbmRlcgogICAgICAgICAgICB9CgkgICAgZWxlbWVudCAiU29mdHdhcmUgU3lzdGVtIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICMxMTY4YmQKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgICAgIHNoYXBlIEN5bGluZGVyCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9Cn0K"
+  },
+  "configuration" : { },
+  "model" : {
+    "people" : [ {
+      "id" : "1",
+      "tags" : "Element,Person,Customer",
+      "name" : "McKinsey",
+      "description" : "Consultant",
+      "relationships" : [ {
+        "id" : "6",
+        "tags" : "Relationship",
+        "sourceId" : "1",
+        "destinationId" : "3",
+        "description" : "1. pushes code to"
+      } ],
+      "location" : "Unspecified"
+    } ],
+    "softwareSystems" : [ {
+      "id" : "2",
+      "tags" : "Element,Software System,Component",
+      "name" : "Client Approved Authentication",
+      "description" : "SSH or Service Account (TBC)",
+      "relationships" : [ {
+        "id" : "8",
+        "tags" : "Relationship",
+        "sourceId" : "2",
+        "destinationId" : "4"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "4",
+      "tags" : "Element,Software System",
+      "name" : "Client Internal Artifactory",
+      "description" : "JFrog",
+      "relationships" : [ {
+        "id" : "11",
+        "tags" : "Relationship",
+        "sourceId" : "4",
+        "destinationId" : "5",
+        "description" : "5. pull artefacts from"
+      }, {
+        "id" : "10",
+        "tags" : "Relationship",
+        "sourceId" : "4",
+        "destinationId" : "4",
+        "description" : "4. Scans code"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "5",
+      "tags" : "Element,Software System,VM",
+      "name" : "Private Client Internal Network",
+      "description" : "PRN",
+      "location" : "Unspecified"
+    }, {
+      "id" : "3",
+      "tags" : "Element,Software System",
+      "name" : "Internal Private McKinsey Repository",
+      "description" : "GitHub",
+      "relationships" : [ {
+        "id" : "7",
+        "tags" : "Relationship",
+        "sourceId" : "3",
+        "destinationId" : "3",
+        "description" : "2. Scans code and commits logs"
+      }, {
+        "id" : "9",
+        "tags" : "Relationship",
+        "sourceId" : "3",
+        "destinationId" : "2",
+        "description" : "3. Automated code pulls"
+      } ],
+      "location" : "Unspecified"
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemLandscapeViews" : [ {
+      "key" : "SystemLandscape",
+      "paperSize" : "A3_Landscape",
+      "dimensions" : {
+        "width" : 3816,
+        "height" : 1066
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "enterpriseBoundaryVisible" : true,
+      "elements" : [ {
+        "id" : "1",
+        "x" : 207,
+        "y" : 473
+      }, {
+        "id" : "2",
+        "x" : 1657,
+        "y" : 523
+      }, {
+        "id" : "3",
+        "x" : 907,
+        "y" : 523
+      }, {
+        "id" : "4",
+        "x" : 2407,
+        "y" : 523
+      }, {
+        "id" : "5",
+        "x" : 3157,
+        "y" : 523
+      } ],
+      "relationships" : [ {
+        "id" : "11"
+      }, {
+        "id" : "6"
+      }, {
+        "id" : "7",
+        "vertices" : [ {
+          "x" : 1002,
+          "y" : 223
+        }, {
+          "x" : 1132,
+          "y" : 223
+        }, {
+          "x" : 1251,
+          "y" : 223
+        } ]
+      }, {
+        "id" : "8"
+      }, {
+        "id" : "9"
+      }, {
+        "id" : "10",
+        "vertices" : [ {
+          "x" : 2497,
+          "y" : 223
+        }, {
+          "x" : 2632,
+          "y" : 223
+        }, {
+          "x" : 2755,
+          "y" : 223
+        } ]
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : {
+        "elements" : [ {
+          "tag" : "Customer",
+          "shape" : "Person"
+        }, {
+          "tag" : "Front End",
+          "shape" : "WebBrowser"
+        }, {
+          "tag" : "VM",
+          "shape" : "RoundedBox"
+        }, {
+          "tag" : "Component",
+          "background" : "#dee2e6",
+          "color" : "#000000",
+          "shape" : "Component"
+        }, {
+          "tag" : "Database",
+          "shape" : "Cylinder"
+        }, {
+          "tag" : "Software System",
+          "background" : "#1168bd",
+          "color" : "#ffffff",
+          "shape" : "Cylinder"
+        } ]
+      },
+      "terminology" : { },
+      "lastSavedView" : "SystemLandscape"
+    }
+  }
+}
