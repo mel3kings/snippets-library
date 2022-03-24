@@ -1,21 +1,16 @@
 
 workspace "SystemLandscape" ""{
     model {
-        mckinsey = person "McKinsey" "Consultant" "Customer"
-        defenceUser = softwareSystem "Client Approved Authentication" "SSH or Service Account (TBC)" "Component"
-        mckinseyRepository = softwareSystem "Internal Private McKinsey Repository" "GitHub" "Software System"
-        defenceArtifactory = softwareSystem "Client Internal Artifactory" "JFrog" "Software System"
-        PRN = softwareSystem "Private Client Internal Network" "PRN" "VM"
+        user = person "Internal User" "End User" "Customer"
+        frontEnd = softwareSystem "Front End React" "Base web app" "Front End"
+        backEnd = softwareSystem "Node Backend" "Simple backend" "Back End"
+        datasource = softwareSystem "Simulation Engine Output" "Excel Data" "Database"
+        simulationEngine = softwareSystem "Simulation Engine" "DS backend" "Back End"
 
-        mckinsey -> mckinseyRepository "1. pushes code to"
-        mckinseyRepository -> mckinseyRepository "2. Scans code and commits logs"
-        defenceUser -> defenceArtifactory ""
-       
-        mckinseyRepository -> defenceUser "3. Automated code pulls"
-        
-        defenceArtifactory -> defenceArtifactory "4. Scans code"
-        defenceArtifactory -> PRN "5. pull artefacts from"
-
+        user -> frontEnd "visits"
+        frontEnd -> backEnd "gets processed data"
+        backEnd -> datasource "collects from"
+        simulationEngine -> datasource "generates"
 
     }
 
@@ -33,22 +28,16 @@ workspace "SystemLandscape" ""{
             element "Front End" {
                 shape WebBrowser
             }
-             element "VM" {
-                shape RoundedBox
-             }
-             element "Component" {
-                color #000000
-                background #dee2e6
-                shape Component
-             }
             element "Database" {
-                shape Cylinder
+                shape Component
             }
-	    element "Software System" {
-                background #1168bd
+    	    element "Software System" {
+
+                background #4b5320
                 color #ffffff
-                shape Cylinder
             }
         }
     }
 }
+
+
