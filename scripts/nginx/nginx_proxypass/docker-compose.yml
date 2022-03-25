@@ -9,6 +9,6 @@ services:
       - "80:80"
       - "443:443"
   web:
-    image: yeasy/simple-web:latest
+    image: mel3kings/project-gemini:latest
     ports:
       - "3000:80"

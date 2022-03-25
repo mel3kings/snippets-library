@@ -1,5 +1,6 @@
 # What is it?
 - For spinning up quickly custom infrastructure on your local (e.g Linux, Windows Machine etc)
+- Ubuntu + Nginx
 
 # Prerequisites
 - Have Vagrant (+VirtualBox if Mac) in your local machine
