@@ -10,7 +10,7 @@ COPY bashscript.sh bashscript.sh
 RUN ["chmod", "+x", "./bashscript.sh"]
 RUN ["./bashscript.sh"]
 
-COPY index.html index.html
+COPY index.html /etc/nginx/html/index.html
 COPY .htpasswd /etc/nginx/.htpasswd
 RUN ["chmod", "644", "/etc/nginx/.htpasswd"]
 
