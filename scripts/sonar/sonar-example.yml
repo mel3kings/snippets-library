@@ -1,0 +1,80 @@
+# This is an auto generated file created during SCAS onboarding.
+# Any modifications done could be overriden
+
+name: Sonar
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop, feat/*, bug/*]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  sonar_scan:
+    # The type of runner that the job will run on
+    runs-on: [linux, scas]
+    env:
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+      USER: ${{ secrets.ARTIFACTORY_USER }}
+      PASS: ${{ secrets.ARTIFACTORY_PASS }}
+      team: <project>
+      GIT_HEAD_REF: ${{ github.head_ref }}
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@master
+      - name: Docker Login
+        run: docker login -u $USER -p $PASS <domain>-docker.jfrog.io
+
+      - name: Test
+        run: |
+          docker run -i --user=`id -u` --rm -e CI=true -e USER -e PASS -e ARTIFACTORY_URL=https://<domain>.jfrog.io/artifactory/ -e RESOLVER_URL=https://<domain>.jfrog.io/artifactory/api/npm/npm \
+          -v `pwd`:/app -w /app -v /efs/.npm:/home/go/.npm \
+          <domain>-docker.jfrog.io/build-tools/firm-npm:14 npm run test:ci
+      - if: ${{ github.base_ref == null }}
+        name: Sonar Scan
+        run: |
+          docker run -i --user `id -u` --rm -e SONAR_TOKEN -e SONAR_HOST_URL \
+          -v `pwd`:/app -w /app <domain>-docker.jfrog.io/sonarsource/sonar-scanner-cli:4 \
+            -Dsonar.projectKey=<project>-Private_<project>-client-integration-test \
+            -Dsonar.branch.name=`echo "${{ github.ref }}" | cut -b 12-` \
+            -Dsonar.qualitygate.wait=false
+      - if: ${{ github.base_ref != null }}
+        name: Sonar Scan on PR
+        run: |
+          docker run -i --user `id -u` --rm -e SONAR_TOKEN -e SONAR_HOST_URL \
+          -v `pwd`:/app -w /app <domain>-docker.jfrog.io/sonarsource/sonar-scanner-cli:4 \
+            -Dsonar.projectKey=<project>-Private_<project>-client-integration-test \
+            -Dsonar.pullrequest.key=${{ github.event.number }} \
+            -Dsonar.pullrequest.branch \
+            -Dsonar.pullrequest.base=${{ github.base_ref }} \
+            -Dsonar.qualitygate.wait=false
+
+      - if: always()
+        name: Docker Logout
+        run: docker logout <domain>-docker.jfrog.io
+
+  xray_scan:
+    runs-on: [linux, scas]
+    env:
+      USER: ${{ secrets.ARTIFACTORY_USER }}
+      PASS: ${{ secrets.ARTIFACTORY_PASS }}
+      JF_URL: https://<domain>.jfrog.io/
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      - name: Docker Login
+        run: docker login -u $USER -p $PASS <domain>-docker.jfrog.io
+      - name: Generate Xray audit report
+        run: |
+          docker run -i --user=`id -u` --rm -e CI=true -e $USER -e $PASS -e ARTIFACTORY_URL=https://<domain>.jfrog.io/artifactory/ -e RESOLVER_URL=https://<domain>.jfrog.io/artifactory/api/npm/npm \
+          -v `pwd`:/app -w /app <domain>-docker.jfrog.io/build-tools/firm-jfrog:2.15 \
+          bash -c "[ -f .npmrc ] && rm .npmrc; echo "registry=https://<domain>.jfrog.io/artifactory/api/npm/npm/" > .npmrc && curl -u $USER:$PASS https://<domain>.jfrog.io/artifactory/api/npm/auth >> .npmrc; npm install; jf c add OSS-CHECK2 --url $JF_URL --user $USER --password $PASS --interactive=false; jf audit"
+      - if: always()
+        name: Docker Logout
+        run: docker logout <domain>-docker.jfrog.io

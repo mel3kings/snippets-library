@@ -1,0 +1,41 @@
+# This is an auto generated file created during SCAS onboarding.
+# Any modifications done could be overriden
+
+name: Checkov IaC scanner
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  checkov-job:
+    runs-on: [linux]
+    env:
+      ARTIFACTORY_USER: ${{ secrets.ARTIFACTORY_USER }}
+      ARTIFACTORY_PASS: ${{ secrets.ARTIFACTORY_PASS }}
+    name: checkov-action-scan
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Docker login
+        run: docker login -u $ARTIFACTORY_USER -p $ARTIFACTORY_PASS <domain>-docker.jfrog.io
+
+      - name: Run Checkov scan
+        run: |
+          docker run --rm --user=`id -u` -v $PWD:/app -w /app <domain>-docker.jfrog.io/bridgecrew/checkov:latest -d . --skip-check CKV_OPENAPI_5,CKV_DOCKER_2,CKV_DOCKER_3,CKV_DOCKER_7 --quiet --compact -o cli -o sarif
+
+      - name: Upload SARIF report
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: results.sarif
+          path: ./results.sarif
+          retention-days: 1
+          if-no-files-found: error
+
+      - if: always()
+        name: Docker Logout
+        run: docker logout <domain>-docker.jfrog.io
