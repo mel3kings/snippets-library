@@ -4,12 +4,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "npm install"
+    "install": "npm install",
+    "start": "node mail.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jest": "^28.1.3",
     "googleapis": "^76.0.0",
     "node-fetch": "^2.6.1"
   },

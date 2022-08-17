@@ -13,3 +13,8 @@ reset secret in GCP.
 
 GCP console:
 https://console.cloud.google.com/apis/dashboard?project=
+
+## To run
+```bash
+npm run start
+```

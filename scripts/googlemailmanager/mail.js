@@ -1,6 +1,7 @@
 const fs = require('fs');
 const readline = require('readline');
 const {google} = require('googleapis');
+const {deleteEmails} = require("./constants");
 
 const SCOPES = ['https://www.googleapis.com/auth/gmail.modify'];
 const TOKEN_PATH = 'token.json';
@@ -62,7 +63,6 @@ const getNewToken = (oAuth2Client, callback) => {
 }
 
 // array of emails to be deleted
-const deleteEmails = ["foo@foo.com"]
 
 const processEmails = async (auth, nextPageToken) => {
     const gmail = google.gmail({version: 'v1', auth});
@@ -76,29 +76,36 @@ const processEmails = async (auth, nextPageToken) => {
         return "";
     }
     const messages = response.data.messages;
-    await Promise.all(messages.map(async (it) => {
+    for (const it of messages) {
+
         totalNumber++;
         const id = it.id
         const from = await getEmailSender(gmail, id);
-        if (deleteEmails.includes(from)) {
+        console.log(`processing ${from}`)
+        if (shouldDeleteEmail(deleteEmails, from)) {
             await deleteEmail(from, gmail, id);
+        } else if (emailMap.has(from)) {
+            let count = emailMap.get(from);
+            emailMap.set(from, ++count);
         } else {
-            if (emailMap.has(from)) {
-                let count = emailMap.get(from);
-                emailMap.set(from, ++count);
-            } else {
-                emailMap.set(from, 1);
-            }
+            emailMap.set(from, 1);
         }
-    }))
+        console.log("snoozing for .5 second before next requests")
+        await snooze(500)
+    }
 
     const nextPage = response.data.nextPageToken
     if (nextPageToken !== '' && nextPage !== undefined) {
-        await snooze(200)
+        console.log("snoozing for 15 seconds before next query")
+        await snooze(15000)
         await writeToFile(nextPage)
         console.log(`======nextPageToken, processed: ${totalNumber} `, nextPageToken);
         await processEmails(auth, nextPage)
     }
+}
+
+const shouldDeleteEmail = (deleteEmails, from) => {
+    return deleteEmails.some(a => from.includes(a))
 }
 
 const getEmailSender = async (gmail, first) => {
@@ -123,7 +130,6 @@ async function deleteEmail(from, gmail, first) {
         userId: 'me',
         id: first,
     })
-    console.log("DELETING FROM:" + from + " " + deleted.data);
 }
 
 const writeToFile = async (nextPage) => {
@@ -137,3 +143,7 @@ const writeToFile = async (nextPage) => {
 }
 
 const snooze = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+module.exports = {
+    shouldDeleteEmail: shouldDeleteEmail
+}
