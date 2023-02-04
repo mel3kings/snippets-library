@@ -11,6 +11,8 @@ terraform.tfstate.backup
 .vagrant
 kedro/
 *.log
+*.pptx
+properties.ini
 dt/
 __pycache__/
 # skip kedro for now
