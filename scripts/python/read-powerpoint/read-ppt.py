@@ -5,12 +5,14 @@ import pptx
 import configparser
 import requests
 import spacy
+import sys
 
 from spacy.lang.en import English
+
 nlp = spacy.load("en_core_web_sm")
 
 
-def process_file(folder, api_key):
+def process_file(folder='', api_key='', print_raw=False):
     print('traversing {}'.format(folder))
     if 'clean' in folder:
         return
@@ -19,6 +21,8 @@ def process_file(folder, api_key):
         if filename.endswith(".pptx"):
             text = get_text_from_ppt(os.path.join(file_path))
             sanitized_string = sanitize_string(text)
+            if print_raw is True:
+                print(sanitized_string)
             chunks = text_to_chunks(sanitized_string)
             for chunk in chunks:
                 ai_response = send_to_open_ai(chunk, api_key)
@@ -91,14 +95,16 @@ def text_to_chunks(text):
 
 
 def main():
+    print_raw = False
+    if len(sys.argv) == 2:
+        print_raw = True
+        print("======== print raw input parameter is set.. printing in console ppt contents")
     config = configparser.ConfigParser()
     config.read(os.path.join(os.path.dirname(__file__), 'properties.ini'))
     directory_ = config['DEFAULT']['Local_Directory']
     print("reading: {}".format(directory_))
-    process_file(directory_, config['DEFAULT']['API_KEY'])
+    process_file(directory_, config['DEFAULT']['API_KEY'], print_raw)
 
-
-# if __name__openai_key = "YOUR_OPENAI_KEY_HERE"
 
 if __name__ == "__main__":
     main()
