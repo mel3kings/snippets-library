@@ -4,6 +4,10 @@ import os
 import pptx
 import configparser
 import requests
+import spacy
+
+from spacy.lang.en import English
+nlp = spacy.load("en_core_web_sm")
 
 
 def process_file(folder, api_key):
@@ -14,10 +18,11 @@ def process_file(folder, api_key):
         file_path = os.path.join(folder, filename)
         if filename.endswith(".pptx"):
             text = get_text_from_ppt(os.path.join(file_path))
-            text = sanitize_string(text)
-            # print("sanitized string: {}".format(text))
-            ai_response = send_to_open_ai(text, api_key)
-            print(ai_response)
+            sanitized_string = sanitize_string(text)
+            chunks = text_to_chunks(sanitized_string)
+            for chunk in chunks:
+                ai_response = send_to_open_ai(chunk, api_key)
+                print(ai_response)
             print("======== done ===========")
             continue;
         elif os.path.isfile(file_path):
@@ -70,6 +75,19 @@ def sanitize_string(s):
             continue
         new_lines.append(line)
     return '\n'.join(new_lines)
+
+
+def text_to_chunks(text):
+    chunks = [[]]
+    chunk_total_words = 0
+    sentences = nlp(text)
+    for sentence in sentences.sents:
+        chunk_total_words += len(sentence.text.split(" "))
+        if chunk_total_words > 1900:
+            chunks.append([])
+            chunk_total_words = len(sentence.text.split(" "))
+        chunks[len(chunks) - 1].append(sentence.text)
+    return chunks
 
 
 def main():
