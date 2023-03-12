@@ -75,7 +75,7 @@ resource "aws_iam_role_policy_attachment" "outside" {
 }
 
 module "lambda" {
-  source = "../.."
+  source = ".."
 
   filename               = join("", data.archive_file.lambda_zip.*.output_path)
   function_name          = module.label.id

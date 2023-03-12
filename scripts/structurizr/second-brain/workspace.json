@@ -1,0 +1,339 @@
+{
+  "id" : 1,
+  "name" : "SystemLandscape",
+  "revision" : 0,
+  "lastModifiedDate" : "2023-02-12T04:14:44Z",
+  "lastModifiedAgent" : "structurizr-web/2829/diagram",
+  "properties" : {
+    "structurizr.dsl" : "CndvcmtzcGFjZSAiU3lzdGVtTGFuZHNjYXBlIiAiInsKICAgIG1vZGVsIHsKICAgICAgICBJbnB1dCA9IHBlcnNvbiAiTWFudWFsIElucHV0IiAiSW5wdXQiICJDdXN0b21lciIKICAgICAgICBPdXRwdXQgPSBwZXJzb24gIk1lIiAiT3V0cHV0IiAiQ3VzdG9tZXIiCgogICAgICAgIFJlYWR3aXNlID0gc29mdHdhcmVTeXN0ZW0gIlJlYWR3aXNlIiAiQWdncmVnYXRvciIgIlBpcGUiCiAgICAgICAgR29vZHJlYWRzID0gc29mdHdhcmVTeXN0ZW0gIkdvb2RyZWFkcyIgIldlYnNpdGUiICJTb2Z0d2FyZSBTeXN0ZW0iCiAgICAgICAgS2luZGxlU2NyaWJlID0gc29mdHdhcmVTeXN0ZW0gIktpbmRsZSBTY3JpYmUiICJCb29rcyIgIlNvZnR3YXJlIFN5c3RlbSIKICAgICAgICBQaHlzaWNhbEJvb2tzID0gZWxlbWVudCAiUGh5c2ljYWwgQm9va3MiICJBU0RTQUQiICJGcm9udCBFbmQiCgoKICAgICAgICBSU1NGZWVkID0gc29mdHdhcmVTeXN0ZW0gIklub3JlYWRlciBSU1MgUmVhZGVyIiAiUlNTIFJlYWRlciIgIlBpcGUiCiAgICAgICAgQ29kaW5nSG9ycm9yID0gc29mdHdhcmVTeXN0ZW0gIkNvZGluZyBIb3Jyb3IgQmxvZyIgIkJsb2cgc2l0ZSIgIkZyb250IEVuZCIKICAgICAgICBTdGFja092ZXJmbG93QmxvZyA9IHNvZnR3YXJlU3lzdGVtICJTdGFja092ZXJmbG93IEJsb2ciICJCbG9nIHNpdGUiICJGcm9udCBFbmQiCiAgICAgICAgVGhvdWdoV29ya3NSYWRhciA9IHNvZnR3YXJlU3lzdGVtICJUaG91Z2h0V29ya3MgUmFkYXIgQmxvZyIgIkJsb2cgc2l0ZSIgIkZyb250IEVuZCIKCiAgICAgICAgT2JzaWRpYW4gPSBzb2Z0d2FyZVN5c3RlbSAiT2JzaWRpYW4iICJOb3RlIFRha2luZyBUb29sIiAiQ29tcG9uZW50IgogICAgICAgIEdpdCAgPSBzb2Z0d2FyZVN5c3RlbSAiR2l0IiAiU3luYyIgIkN5bGluZGVyIgoKICAgICAgICBPcGVuQUkgID0gc29mdHdhcmVTeXN0ZW0gIk9wZW4gQUkiICJHUFQtMyIgIlJvYm90IgoKICAgICAgICBJbnB1dCAtPiBPYnNpZGlhbiAibWFudWFsIGlucHV0IG9mIG90aGVyIG5vdGVzIgogICAgICAgIElucHV0IC0+IFBoeXNpY2FsQm9va3MgIm1hbnVhbCBwcm9jZXNzaW5nIgoKCiAgICAgICAgQ29kaW5nSG9ycm9yIC0+IFJTU0ZlZWQgInB1bGxzIG5ldyBhcnRpY2xlcyIKICAgICAgICBTdGFja092ZXJmbG93QmxvZyAtPiBSU1NGZWVkICJwdWxscyBuZXcgYXJ0aWNsZXMiCiAgICAgICAgVGhvdWdoV29ya3NSYWRhciAtPiBSU1NGZWVkICJwdWxscyBuZXcgYXJ0aWNsZXMiCiAgICAgICAgUlNTRmVlZCAtPiBSZWFkd2lzZSAicHVsbHMgYWxsIGluZm9ybWF0aW9uIgoKICAgICAgICBHb29kcmVhZHMgLT4gUmVhZHdpc2UgInB1bGxzIGFsbCBpbmZvcm1hdGlvbiIKICAgICAgICBLaW5kbGVTY3JpYmUgLT4gUmVhZHdpc2UgInB1bGxzIGFsbCBpbmZvcm1hdGlvbiIKICAgICAgICBQaHlzaWNhbEJvb2tzIC0+IFJlYWR3aXNlICJtYW51YWwgaW5wdXQiCgogICAgICAgIFJlYWR3aXNlIC0+IE9ic2lkaWFuICJwdWxscyIKICAgICAgICBPYnNpZGlhbiAtPiBHaXQgIlN5bmNzIGFsbCBteSBub3RlcyIKICAgICAgICBPYnNpZGlhbiAtPiBPcGVuQUkgIlN5bnRoZXNpemUgJiBIZWxwIEdlbmVyYXRlIElkZWFzIgogICAgICAgIE9wZW5BSSAtPiBPdXRwdXQgIkNvbnN1bWUiCgogICAgfQoKCiAgICB2aWV3cyB7CiAgICAgICAgc3lzdGVtbGFuZHNjYXBlICJTeXN0ZW1MYW5kc2NhcGUiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICB9CgoKICAgICAgICBzdHlsZXMgewogICAgICAgICAgICBlbGVtZW50ICJDdXN0b21lciJ7CiAgICAgICAgICAgICAgICBzaGFwZSBQZXJzb24KICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJQaXBlInsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzhGN0Q3RAogICAgICAgICAgICAgICAgc2hhcGUgUGlwZQogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIlJvYm90InsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgI0IxOUU5RQogICAgICAgICAgICAgICAgc2hhcGUgUm9ib3QKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJDb21wb25lbnQiewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjOEY3RDdECiAgICAgICAgICAgICAgICBzaGFwZSBDb21wb25lbnQKICAgICAgICAgICAgfQogICAgICAgICAgICAgZWxlbWVudCAiQ3lsaW5kZXIiewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjOEY3RDdECiAgICAgICAgICAgICAgICBzaGFwZSBDeWxpbmRlcgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkZyb250IEVuZCIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjNkQ1QzVDCiAgICAgICAgICAgICAgICBzaGFwZSBXZWJCcm93c2VyCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiRm9sZGVyIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBGb2xkZXIKICAgICAgICAgICAgfQoJICAgICAgICBlbGVtZW50ICJTb2Z0d2FyZSBTeXN0ZW0iIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzRBM0EzQQogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQp9CgoK"
+  },
+  "configuration" : { },
+  "model" : {
+    "people" : [ {
+      "id" : "1",
+      "tags" : "Element,Person,Customer",
+      "name" : "Manual Input",
+      "description" : "Input",
+      "relationships" : [ {
+        "id" : "15",
+        "tags" : "Relationship",
+        "sourceId" : "1",
+        "destinationId" : "6",
+        "description" : "manual processing"
+      }, {
+        "id" : "14",
+        "tags" : "Relationship",
+        "sourceId" : "1",
+        "destinationId" : "11",
+        "description" : "manual input of other notes"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "2",
+      "tags" : "Element,Person,Customer",
+      "name" : "Me",
+      "description" : "Output",
+      "location" : "Unspecified"
+    } ],
+    "softwareSystems" : [ {
+      "id" : "12",
+      "tags" : "Element,Software System,Cylinder",
+      "name" : "Git",
+      "description" : "Sync",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "4",
+      "tags" : "Element,Software System",
+      "name" : "Goodreads",
+      "description" : "Website",
+      "relationships" : [ {
+        "id" : "20",
+        "tags" : "Relationship",
+        "sourceId" : "4",
+        "destinationId" : "3",
+        "description" : "pulls all information"
+      } ],
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "8",
+      "tags" : "Element,Software System,Front End",
+      "name" : "Coding Horror Blog",
+      "description" : "Blog site",
+      "relationships" : [ {
+        "id" : "16",
+        "tags" : "Relationship",
+        "sourceId" : "8",
+        "destinationId" : "7",
+        "description" : "pulls new articles"
+      } ],
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "5",
+      "tags" : "Element,Software System",
+      "name" : "Kindle Scribe",
+      "description" : "Books",
+      "relationships" : [ {
+        "id" : "21",
+        "tags" : "Relationship",
+        "sourceId" : "5",
+        "destinationId" : "3",
+        "description" : "pulls all information"
+      } ],
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "9",
+      "tags" : "Element,Software System,Front End",
+      "name" : "StackOverflow Blog",
+      "description" : "Blog site",
+      "relationships" : [ {
+        "id" : "17",
+        "tags" : "Relationship",
+        "sourceId" : "9",
+        "destinationId" : "7",
+        "description" : "pulls new articles"
+      } ],
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "13",
+      "tags" : "Element,Software System,Robot",
+      "name" : "Open AI",
+      "description" : "GPT-3",
+      "relationships" : [ {
+        "id" : "26",
+        "tags" : "Relationship",
+        "sourceId" : "13",
+        "destinationId" : "2",
+        "description" : "Consume"
+      } ],
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "3",
+      "tags" : "Element,Software System,Pipe",
+      "name" : "Readwise",
+      "description" : "Aggregator",
+      "relationships" : [ {
+        "id" : "23",
+        "tags" : "Relationship",
+        "sourceId" : "3",
+        "destinationId" : "11",
+        "description" : "pulls"
+      } ],
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "11",
+      "tags" : "Element,Software System,Component",
+      "name" : "Obsidian",
+      "description" : "Note Taking Tool",
+      "relationships" : [ {
+        "id" : "24",
+        "tags" : "Relationship",
+        "sourceId" : "11",
+        "destinationId" : "12",
+        "description" : "Syncs all my notes"
+      }, {
+        "id" : "25",
+        "tags" : "Relationship",
+        "sourceId" : "11",
+        "destinationId" : "13",
+        "description" : "Synthesize & Help Generate Ideas"
+      } ],
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "7",
+      "tags" : "Element,Software System,Pipe",
+      "name" : "Inoreader RSS Reader",
+      "description" : "RSS Reader",
+      "relationships" : [ {
+        "id" : "19",
+        "tags" : "Relationship",
+        "sourceId" : "7",
+        "destinationId" : "3",
+        "description" : "pulls all information"
+      } ],
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "10",
+      "tags" : "Element,Software System,Front End",
+      "name" : "ThoughtWorks Radar Blog",
+      "description" : "Blog site",
+      "relationships" : [ {
+        "id" : "18",
+        "tags" : "Relationship",
+        "sourceId" : "10",
+        "destinationId" : "7",
+        "description" : "pulls new articles"
+      } ],
+      "location" : "Unspecified",
+      "documentation" : { }
+    } ],
+    "customElements" : [ {
+      "id" : "6",
+      "tags" : "Element",
+      "name" : "Physical Books",
+      "description" : "Front End",
+      "relationships" : [ {
+        "id" : "22",
+        "tags" : "Relationship",
+        "sourceId" : "6",
+        "destinationId" : "3",
+        "description" : "manual input"
+      } ],
+      "metadata" : "ASDSAD"
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemLandscapeViews" : [ {
+      "key" : "SystemLandscape",
+      "order" : 1,
+      "paperSize" : "A2_Landscape",
+      "dimensions" : {
+        "width" : 4208,
+        "height" : 4016
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "enterpriseBoundaryVisible" : true,
+      "relationships" : [ {
+        "id" : "21"
+      }, {
+        "id" : "20"
+      }, {
+        "id" : "18"
+      }, {
+        "id" : "17"
+      }, {
+        "id" : "16"
+      }, {
+        "id" : "26"
+      }, {
+        "id" : "15"
+      }, {
+        "id" : "25"
+      }, {
+        "id" : "14",
+        "vertices" : [ {
+          "x" : 400,
+          "y" : 907
+        }, {
+          "x" : 400,
+          "y" : 1207
+        } ]
+      }, {
+        "id" : "24"
+      }, {
+        "id" : "23"
+      }, {
+        "id" : "22"
+      }, {
+        "id" : "19"
+      } ],
+      "elements" : [ {
+        "id" : "11",
+        "x" : 583,
+        "y" : 2107
+      }, {
+        "id" : "12",
+        "x" : 208,
+        "y" : 2757
+      }, {
+        "id" : "13",
+        "x" : 958,
+        "y" : 2707
+      }, {
+        "id" : "1",
+        "x" : 233,
+        "y" : 207
+      }, {
+        "id" : "2",
+        "x" : 983,
+        "y" : 3407
+      }, {
+        "id" : "3",
+        "x" : 1300,
+        "y" : 1507
+      }, {
+        "id" : "4",
+        "x" : 1300,
+        "y" : 907
+      }, {
+        "id" : "5",
+        "x" : 2050,
+        "y" : 907
+      }, {
+        "id" : "6",
+        "x" : 550,
+        "y" : 907
+      }, {
+        "id" : "7",
+        "x" : 2800,
+        "y" : 907
+      }, {
+        "id" : "8",
+        "x" : 2050,
+        "y" : 257
+      }, {
+        "id" : "9",
+        "x" : 2800,
+        "y" : 257
+      }, {
+        "id" : "10",
+        "x" : 3550,
+        "y" : 257
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : {
+        "elements" : [ {
+          "tag" : "Customer",
+          "shape" : "Person"
+        }, {
+          "tag" : "Pipe",
+          "background" : "#8f7d7d",
+          "shape" : "Pipe"
+        }, {
+          "tag" : "Robot",
+          "background" : "#b19e9e",
+          "shape" : "Robot"
+        }, {
+          "tag" : "Component",
+          "background" : "#8f7d7d",
+          "shape" : "Component"
+        }, {
+          "tag" : "Cylinder",
+          "background" : "#8f7d7d",
+          "shape" : "Cylinder"
+        }, {
+          "tag" : "Front End",
+          "background" : "#6d5c5c",
+          "shape" : "WebBrowser"
+        }, {
+          "tag" : "Folder",
+          "shape" : "Folder"
+        }, {
+          "tag" : "Software System",
+          "background" : "#4a3a3a",
+          "color" : "#ffffff"
+        } ]
+      },
+      "terminology" : { },
+      "lastSavedView" : "SystemLandscape"
+    }
+  }
+}
