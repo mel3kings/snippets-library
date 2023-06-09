@@ -3,7 +3,7 @@ import os
 
 print("organize files....")
 
-paths = ['/Users/melchor_tatlonghari/Desktop/', '/Users/melchor_tatlonghari/Downloads/']
+paths = ['/Users/melchortatlonghari/Desktop/', '/Users/melchortatlonghari/Downloads/']
 
 
 def ensure_folder_exists(folders):
