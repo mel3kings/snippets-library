@@ -1,0 +1,3 @@
+com.godwin.json.parser
+IdeaVIM
+com.github.copilot

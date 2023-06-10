@@ -6,15 +6,9 @@
       <version value="1.4.32" />
       <homePath value="$KOTLIN_BUNDLED$" />
       <roots>
-        <annotationsPath>
-          <root type="composite" />
-        </annotationsPath>
         <classPath>
           <root type="composite" />
         </classPath>
-        <javadocPath>
-          <root type="composite" />
-        </javadocPath>
         <sourcePath>
           <root type="composite" />
         </sourcePath>
@@ -27,11 +21,6 @@
       <version value="java version &quot;11.0.10&quot;" />
       <homePath value="$USER_HOME$/.sdkman/candidates/java/11.0.10.hs-adpt" />
       <roots>
-        <annotationsPath>
-          <root type="composite">
-            <root url="jar://$APPLICATION_HOME_DIR$/plugins/java/lib/jdkAnnotations.jar!/" type="simple" />
-          </root>
-        </annotationsPath>
         <classPath>
           <root type="composite">
             <root url="jrt:///Users/melchor_tatlonghari/.sdkman/candidates/java/11.0.10.hs-adpt!/java.base" type="simple" />
@@ -107,9 +96,6 @@
             <root url="jrt:///Users/melchor_tatlonghari/.sdkman/candidates/java/11.0.10.hs-adpt!/jdk.zipfs" type="simple" />
           </root>
         </classPath>
-        <javadocPath>
-          <root type="composite" />
-        </javadocPath>
         <sourcePath>
           <root type="composite">
             <root url="jar://$USER_HOME$/.sdkman/candidates/java/11.0.10.hs-adpt/lib/src.zip!/java.se" type="simple" />
@@ -194,11 +180,6 @@
       <version value="java version &quot;1.8.0_282&quot;" />
       <homePath value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home" />
       <roots>
-        <annotationsPath>
-          <root type="composite">
-            <root url="jar://$APPLICATION_HOME_DIR$/plugins/java/lib/jdkAnnotations.jar!/" type="simple" />
-          </root>
-        </annotationsPath>
         <classPath>
           <root type="composite">
             <root url="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/charsets.jar!/" type="simple" />
@@ -223,9 +204,6 @@
             <root url="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/lib/tools.jar!/" type="simple" />
           </root>
         </classPath>
-        <javadocPath>
-          <root type="composite" />
-        </javadocPath>
         <sourcePath>
           <root type="composite">
             <root url="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/" type="simple" />
@@ -240,11 +218,6 @@
       <version value="version 11.0.10" />
       <homePath value="$USER_HOME$/.sdkman/candidates/java/current" />
       <roots>
-        <annotationsPath>
-          <root type="composite">
-            <root url="jar://$APPLICATION_HOME_DIR$/plugins/java/lib/jdkAnnotations.jar!/" type="simple" />
-          </root>
-        </annotationsPath>
         <classPath>
           <root type="composite">
             <root url="jrt:///Users/melchor_tatlonghari/.sdkman/candidates/java/current!/java.base" type="simple" />
@@ -320,9 +293,6 @@
             <root url="jrt:///Users/melchor_tatlonghari/.sdkman/candidates/java/current!/jdk.zipfs" type="simple" />
           </root>
         </classPath>
-        <javadocPath>
-          <root type="composite" />
-        </javadocPath>
         <sourcePath>
           <root type="composite">
             <root url="jar://$USER_HOME$/.sdkman/candidates/java/current/lib/src.zip!/java.se" type="simple" />
@@ -404,44 +374,45 @@
     <jdk version="2">
       <name value="Python 3.9" />
       <type value="Python SDK" />
-      <version value="Python 3.9.5" />
+      <version value="Python 3.9.10" />
       <homePath value="/usr/local/bin/python3.9" />
       <roots>
-        <annotationsPath>
-          <root type="composite" />
-        </annotationsPath>
         <classPath>
           <root type="composite">
-            <root url="file:///usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9" type="simple" />
-            <root url="file:///usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/lib-dynload" type="simple" />
+            <root url="file:///usr/local/Cellar/python@3.9/3.9.10/Frameworks/Python.framework/Versions/3.9/lib/python3.9" type="simple" />
+            <root url="file:///usr/local/Cellar/python@3.9/3.9.10/Frameworks/Python.framework/Versions/3.9/lib/python3.9/lib-dynload" type="simple" />
             <root url="file:///usr/local/lib/python3.9/site-packages" type="simple" />
             <root url="jar:///usr/local/lib/python3.9/site-packages/autoscraper-1.1.12-py3.9.egg!/" type="simple" />
             <root url="file:///usr/local/lib/python3.9/site-packages/lxml-4.6.3-py3.9-macosx-10.15-x86_64.egg" type="simple" />
             <root url="jar:///usr/local/lib/python3.9/site-packages/bs4-0.0.1-py3.9.egg!/" type="simple" />
-            <root url="file:///usr/local/lib/python3.9/site-packages/requests-2.25.1-py3.9.egg" type="simple" />
             <root url="file:///usr/local/lib/python3.9/site-packages/beautifulsoup4-4.9.3-py3.9.egg" type="simple" />
             <root url="file:///usr/local/lib/python3.9/site-packages/urllib3-1.26.5-py3.9.egg" type="simple" />
             <root url="file:///usr/local/lib/python3.9/site-packages/idna-2.10-py3.9.egg" type="simple" />
             <root url="file:///usr/local/lib/python3.9/site-packages/chardet-4.0.0-py3.9.egg" type="simple" />
             <root url="file:///usr/local/lib/python3.9/site-packages/certifi-2021.5.30-py3.9.egg" type="simple" />
             <root url="file:///usr/local/lib/python3.9/site-packages/soupsieve-2.2.1-py3.9.egg" type="simple" />
-            <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2021.1/python_stubs/-1199943124" type="simple" />
+            <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2021.2/python_stubs/-1199943124" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/python-skeletons" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stdlib" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/jwt" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/six" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/mock" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/nmap" type="simple" />
+            <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/annoy" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/attrs" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/polib" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/retry" type="simple" />
+            <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/docopt" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/enum34" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/orjson" type="simple" />
+            <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/pysftp" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/xxhash" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/chardet" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/futures" type="simple" />
+            <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/pyaudio" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/tzlocal" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/aiofiles" type="simple" />
+            <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/colorama" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/filelock" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/Markdown" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/paramiko" type="simple" />
@@ -456,6 +427,7 @@
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/cachetools" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/Deprecated" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/frozendict" type="simple" />
+            <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/pyfarmhash" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/contextvars" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/JACK-Client" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/atomicwrites" type="simple" />
@@ -466,12 +438,8 @@
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/python-gflags" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/python-slugify" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/python-dateutil" type="simple" />
-            <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stubs/typing-extensions" type="simple" />
           </root>
         </classPath>
-        <javadocPath>
-          <root type="composite" />
-        </javadocPath>
         <sourcePath>
           <root type="composite" />
         </sourcePath>

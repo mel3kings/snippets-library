@@ -1,0 +1,31 @@
+<application>
+  <component name="FindSettings">
+    <option name="customScope" value="All Places" />
+    <option name="defaultScopeName" value="All Places" />
+    <option name="localCaseSensitive" value="true" />
+    <option name="localRegularExpressions" value="true" />
+    <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
+    <option name="LOCAL_REGULAR_EXPRESSIONS" value="true" />
+    <option name="SEARCH_SCOPE" value="All Places" />
+    <mask>*.gradle</mask>
+    <mask>*.sql</mask>
+    <mask>*Repository.kt</mask>
+    <mask>*.kt</mask>
+    <mask>*.ts</mask>
+    <mask>*.</mask>
+    <mask>*.yml</mask>
+    <mask>*.json</mask>
+    <mask>*dto*</mask>
+    <mask>*.css</mask>
+    <mask>*.html</mask>
+    <mask>*.xml</mask>
+    <mask>*.jsp</mask>
+    <mask>*.properties</mask>
+    <mask>*.java</mask>
+    <mask>*.js</mask>
+    <mask>*.tsx</mask>
+    <mask>*.tf</mask>
+    <mask>*.bak</mask>
+    <mask>!*.json</mask>
+  </component>
+</application>

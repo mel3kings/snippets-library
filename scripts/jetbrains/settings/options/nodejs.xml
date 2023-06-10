@@ -1,0 +1,19 @@
+<application>
+  <component name="NodeJsLocalInterpreterManager">
+    <local-interpreter path="$USER_HOME$/.asdf/shims/node">
+      <version-cache last-modified="1658479960822" />
+    </local-interpreter>
+    <local-interpreter path="/usr/local/bin/node">
+      <version-cache last-modified="0" />
+    </local-interpreter>
+    <local-interpreter path="$USER_HOME$/.asdf/installs/nodejs/18.6.0/bin/node">
+      <version-cache version="18.6.0" last-modified="1658479953240" />
+    </local-interpreter>
+    <local-interpreter path="$USER_HOME$/.nvm/versions/node/v16.16.0/bin/node">
+      <version-cache version="16.16.0" last-modified="1657200991000" />
+    </local-interpreter>
+    <local-interpreter path="$USER_HOME$/.nvm/versions/node/v14.20.0/bin/node">
+      <version-cache version="14.20.0" last-modified="1657168223000" />
+    </local-interpreter>
+  </component>
+</application>
