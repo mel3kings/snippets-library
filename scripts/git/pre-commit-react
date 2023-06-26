@@ -14,3 +14,4 @@ fi
 
 echo "========= running prettier =========="
 npx prettier --write .
+``
