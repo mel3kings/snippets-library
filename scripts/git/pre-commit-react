@@ -1,0 +1,16 @@
+#!/bin/sh
+echo "======= running tests before pushing ======="
+
+RESPONSE="$(yarn test 2>&1 | grep 'FAIL')"
+if [ -z "$RESPONSE" ]
+then
+	echo "Test all good"
+else
+	echo "Found FAILING tests:"
+	echo $RESPONSE
+	exit 1
+fi
+
+
+echo "========= running prettier =========="
+npx prettier --write .
