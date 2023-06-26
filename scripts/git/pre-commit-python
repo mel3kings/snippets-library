@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Run Python unittests
+python -m unittest discover -s tests/ -p "*.py"
+
+# Check the exit code of the previous command
+RESULT=$?
+if [ $RESULT -ne 0 ]; then
+    echo "Unit tests failed. Commit aborted."
+    exit 1
+fi

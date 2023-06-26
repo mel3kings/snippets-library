@@ -1,0 +1,13 @@
+#!/bin/sh
+
+
+echo "======= running terraform validate before committing ======="
+list=("IAM" "hooks")
+for d in "${list[@]}"; do
+    (cd "$d" && terraform validate)
+    if [[ $? -ne 0 ]]; then
+        exit 1
+    else
+        echo "terraforms file valid"
+    fi
+done;
